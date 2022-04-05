@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@300&display=swap");
+
+:root {
+  /* Paleta Argentina */
+  /* #75aadb */
+  /* #ffffff */
+  /* #fcbf45 */
+  /* #843511 */
+  /* #ffffff */
+  /* #75aadb */
+
+  /* TODO Agregar variables */
+  --color-primary: #75aadb;
+  --color-secondary: #fcbf45;
+  --color-light: #ffffff;
+
+  --font-family-primary: "Open Sans", sans-serif;
+
+  --font-size-base: 1rem;
+  --font-size-h1: 3rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-p: 1.15rem;
+
+  --font-weight-base: 400;
+  --font-weight-h1: 700;
+  --font-weight-h2: 600;
+  --font-weight-h3: 500;
+  --font-weight-p: 400;
+
+  --text-light-color-primary: #fff;
+  --text-light-color-secondary: #ccc;
+
+  --bg-primary: #222222;
+  --bg-img: url(../img/bg.jpg);
+
+  --border-radius-sm: 0.125rem;
+  --border-radius-md: 0.25rem;
+  --border-radius-lg: 0.5rem;
+  --border-radius-xl: 1rem;
+  --border-radius-xxl: 2rem;
+}
+
+/* ----------------- */
+/*      General      */
+/* ----------------- */
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--text-light-color-primary);
+  font-family: var(--font-family-primary);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1);
+}
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+}
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-h3);
+}
+p {
+  font-size: var(--font-size-p);
+  font-weight: var(--font-weight-p);
+  color: var(--text-light-color-secondary);
+}
+
+/* ----------------- */
+/*       Utils       */
+/* ----------------- */
+.underline-hover{
+    cursor: pointer;
+}
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: 0.8s;
+}
+.underline-hover:hover::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-light);
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  transition: 0.5s;
+  width: 100%;
+}
+
+/* ----------------- */
+/*       Navbar      */
+/* ----------------- */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 1rem 0;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(5px);
+}
+nav .nav-wrapper {
+  padding: 0 1rem;
+}
+nav a {
+  position: relative;
+  text-decoration: none;
+  margin: 0 1rem;
+  color: var(--text-light-color-primary);
+  font-size: 1.25rem;
+}
+
+/* ----------------- */
+/*       Header      */
+/* ----------------- */
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bg.jpg) top center;
+  background-size: cover;
+  position: relative;
+}
+header h1 {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 0;
+}
+header div {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 30px 30px 1px rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(7px);
+  transition: 0.5s;
+}
+header div:hover {
+  box-shadow: none;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+header p {
+  margin-bottom: 2rem;
+}
+header a {
+  font-size: 1.25rem;
+  border: 1px solid var(--color-light);
+  position: relative;
+  background-color: transparent;
+  color: var(--text-light-color-primary);
+  padding: 15px 30px;
+}
+header a:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-light);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: 0.2s;
+  z-index: -1;
+}
+header a:hover:after {
+  top: 0px;
+  left: 0px;
+  background-color: var(--color-primary);
+}
+
+/* ----------------- */
+/*        Main       */
+/* ----------------- */
+main {
+  background-color: var(--bg-primary);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main h2 {
+  position: relative;
+  text-decoration: none;
+}
