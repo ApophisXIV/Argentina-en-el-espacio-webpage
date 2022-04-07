@@ -33,9 +33,12 @@
 
   --text-light-color-primary: #fff;
   --text-light-color-secondary: #ccc;
+  --text-dark-color-primary: #000;
+  --text-dark-color-secondary: #666;
 
   --bg-primary: #222222;
   --bg-secondary: #444444;
+  --bg-black: #0f0f0f;
   --bg-img: url(../img/bg.jpg);
 
   --border-radius-sm: 0.125rem;
@@ -291,7 +294,7 @@ header div:hover::before {
   transform: translate(-50%, -50%);
   width: 100vw;
   height: 100vh;
-  background-color: rgba(20, 20, 20);
+  background: var(--bg-black);
   z-index: -1;
 
   /* Starred background */
