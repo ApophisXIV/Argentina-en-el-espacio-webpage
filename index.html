@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Argentina en el espacio 🇦🇷</title>
 
+
+    <!-- Atomic design components -->
+    <link rel="stylesheet" href="assets/css/atomic/buttons.css">
+    <link rel="stylesheet" href="assets/css/atomic/form.css">
+
+    <!-- Specific styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -34,44 +40,60 @@
                 nuestro país en relación a lanzaderas espaciales y
                 satélites
             </p>
-            <a class="btn-t-1" role="button">Exploremos</a>
+            <button class="btn-t-1" role="button">Exploremos</button>
         </div>
     </header>
     <!-- End Home -->
 
 
     <!-- ======= Timeline ======= -->
-    <main>
+    <!-- <main> -->
 
-        <!-- ======= Launchers Section ======= -->
-        <section class="timeline">
-            <h2 class="underline-hover">Lanzaderas</h2>
-            <div class="timeline-wrapper">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>19XX</h3>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nulla adipisci delectus
-                            perspiciatis perferendis debitis fugiat accusantium temporibus. Expedita adipisci nesciunt
-                            architecto minima minus ipsum rem tempore non facere eligendi.
-                        </p>
-                    </div>
+    <!-- ======= Launchers Section ======= -->
+    <section class="timeline">
+        <h2 class="underline-hover">Lanzaderas</h2>
+        <div class="timeline-wrapper">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>19XX</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
                 </div>
-        </section>
-        <!-- End Launchers Section -->
+            </div>
+    </section>
+    <!-- End Launchers Section -->
 
-        <!-- ======= Satellite Section ======= -->
-        <section class="timeline">
+    <!-- ======= Satellite Section ======= -->
+    <!-- <section class="timeline">
             <h2 class="underline-hover">Satélites</h2>
+        </section> -->
+    <!-- End Satellite Section -->
 
-        </section>
-        <!-- End Satellite Section -->
-
-    </main>
+    <!-- </main> -->
     <!-- End Timeline -->
 
     <!-- ======= Contact ======= -->
-    <footer></footer>
+    <footer>
+        <!-- Contact form component -->
+        <form class="contact-form">
+            <h3>Contactanos</h3>
+            <div class="form-group">
+                <input type="text" class="form-input" id="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-input" id="email" placeholder="Correo electrónico" required>
+                <small>Nunca compartiremos tu correo electrónico con nadie más.</small>
+            </div>
+            <div class="form-group">
+                <textarea class="form-input" id="message" rows="3" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-base btn-generic-1" id="form-submit-btn">Enviar</button>
+            </div>
+        </form>
+    </footer>
+
     <!-- End Contact -->
 
 </body>
