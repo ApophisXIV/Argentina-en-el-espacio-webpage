@@ -24,6 +24,8 @@
   --font-size-h2: 2rem;
   --font-size-h3: 1.5rem;
   --font-size-p: 1.15rem;
+  --font-size-placeholder: 0.9rem;
+  --font-size-small: 0.75rem;
 
   --font-weight-base: 400;
   --font-weight-h1: 700;
@@ -32,9 +34,11 @@
   --font-weight-p: 400;
 
   --text-light-color-primary: #fff;
-  --text-light-color-secondary: #ccc;
-  --text-dark-color-primary: #000;
-  --text-dark-color-secondary: #666;
+  --text-light-color-secondary: #495057;
+  --text-dark-color-primary: #212529;
+  --text-dark-color-secondary: #343a40;
+  --text-muted: #6c757d;
+  --text-placeholder: #c0c5ce;
 
   --bg-primary: #222222;
   --bg-secondary: #444444;
@@ -46,6 +50,9 @@
   --border-radius-lg: 0.5rem;
   --border-radius-xl: 1rem;
   --border-radius-xxl: 2rem;
+
+  /* Form global variables */
+  --form-font-family-primary: var(--font-family-primary);
 }
 
 /* ----------------- */
@@ -183,9 +190,27 @@ p {
   top: 0px;
   left: 0px;
   background-color: var(--color-primary);
+  border: 0;
 }
 .btn-t-1:active {
   background-color: var(--color-active);
+}
+
+/* Text color */
+.text-primary {
+  color: var(--text-light-color-primary);
+}
+.text-secondary {
+  color: var(--text-light-color-secondary);
+}
+.text-dark {
+  color: var(--text-dark-color-primary);
+}
+.text-dark-secondary {
+  color: var(--text-dark-color-secondary);
+}
+.text-muted {
+  color: var(--text-muted);
 }
 
 /* ----------------- */
@@ -334,23 +359,12 @@ main h2 {
   text-decoration: none;
 }
 
-/* ----------------- */
-/*      Timeline     */
-/* ----------------- */
-.timeline {
-  position: relative;
-  padding: 2rem 0;
-  margin: 2rem 0;
-  list-style: none;
-  transition: 0.5s;
-}
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  background-color: var(--color-primary);
-  transition: 0.5s;
-}
+/* Responsive breakpoints */
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
