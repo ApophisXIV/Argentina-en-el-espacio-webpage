@@ -121,6 +121,7 @@ body {
   box-shadow: var(--form-3D-effect-outset);
   background: var(--form-elements-active-bg);
   color: var(--form-text-placeholder);
+  transform: scale(1.01);
 }
 
 /* Placeholders */
