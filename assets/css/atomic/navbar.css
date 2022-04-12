@@ -66,6 +66,7 @@ nav a {
   position: absolute;
   top: calc(var(--navbar-height) / 2);
   left: 0;
+  /* FIXME: This is a hack to make the dropdown menu appear correctly but it activate along the whole navbar and this is incorrect */
   width: 100%;
   height: calc(var(--navbar-height) / 2);
 }
