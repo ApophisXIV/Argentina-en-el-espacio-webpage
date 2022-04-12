@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Argentina en el espacio 🇦🇷</title>
+    <title>Argentina en el espacio</title>
+    <link rel="icon" href="assets/img/arg.ico">
 
 
     <!-- Atomic design components -->
     <link rel="stylesheet" href="assets/css/atomic/buttons.css">
     <link rel="stylesheet" href="assets/css/atomic/form.css">
+    <link rel="stylesheet" href="assets/css/atomic/navbar.css">
 
     <!-- Specific styles -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -23,18 +25,26 @@
     <nav>
         <h3>Historia espacial argentina</h3>
         <div class="nav-wrapper">
-            <a class="underline-hover" href="index.html">Inicio</a>
+            <a class="underline-hover" href="_self">Inicio</a>
             <a class="underline-hover" href="about.html">Acerca de</a>
-            <a class="underline-hover" href="services.html">Servicios</a>
-            <a class="underline-hover" href="contact.html">Contacto</a>
+            <div class="dropdown-menu">
+                <a class="underline-hover" href="">Servicios</a>
+                <ul>
+                    <li><a class="underline-hover" href="#post-satelites">Satelites</a></li>
+                    <li><a class="underline-hover" href="#post-lanzaderas">Lanzaderas</a></li>
+                </ul>
+            </div>
+            <a class="underline-hover" href="#post-contact">Contacto</a>
         </div>
     </nav>
+
+
     <!-- End Navbar -->
 
     <!-- ======= Home ======= -->
     <header class="parallax">
         <div>
-            <h1>Argentina en el <br>espacio </h1>
+            <h1 id="post-inicio">Argentina en el <br>espacio </h1>
             <p>
                 Una breve historia del desarrollo espacial de
                 nuestro país en relación a lanzaderas espaciales y
@@ -51,14 +61,14 @@
 
     <!-- ======= Launchers Section ======= -->
     <section class="timeline">
-        <h2 class="underline-hover">Lanzaderas</h2>
+        <h2 id="post-lanzaderas" class="underline-hover">Lanzaderas</h2>
         <div class="timeline-wrapper">
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>19XX</h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    </p>
+                    <h4>Un resumen de los distintos proyectos de lanzaderas que tuvo y tiene Argentina </h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </p>
                 </div>
             </div>
     </section>
@@ -66,7 +76,7 @@
 
     <!-- ======= Satellite Section ======= -->
     <!-- <section class="timeline">
-            <h2 class="underline-hover">Satélites</h2>
+            <h2 id="post-satelites" class="underline-hover">Satélites</h2>
         </section> -->
     <!-- End Satellite Section -->
 
@@ -77,7 +87,7 @@
     <footer>
         <!-- Contact form component -->
         <form class="contact-form">
-            <h3>Contactanos</h3>
+            <h3 id="post-contact"> Contactanos</h3>
             <div class="form-group">
                 <input type="text" class="form-input" id="name" placeholder="Tu nombre" required>
             </div>
@@ -92,6 +102,10 @@
                 <button type="submit" class="btn-base btn-generic-1" id="form-submit-btn">Enviar</button>
             </div>
         </form>
+        <div class="copyright">
+            <small>
+                &copy; Copyright 2022. Todos los derechos reservados.
+            </small>
     </footer>
 
     <!-- End Contact -->
