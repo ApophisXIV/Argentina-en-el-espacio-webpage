@@ -121,7 +121,6 @@ h3 {
 p {
   font-size: var(--font-size-p);
   font-weight: var(--font-weight-p);
-  color: var(--text-light-color-secondary);
 }
 
 /* ----------------- */
@@ -214,54 +213,6 @@ p {
 }
 
 /* ----------------- */
-/*       Navbar      */
-/* ----------------- */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  z-index: 1;
-  text-align: right;
-
-  /* TODO Select the gradient */
-  background: linear-gradient(to right, #ff00cc, #333399);
-  background: linear-gradient(to right, #4ecdc4, #556270);
-  background: linear-gradient(to right, #bdc3c7, #2c3e50);
-  background: linear-gradient(to right, #000428, #004e92);
-  background: linear-gradient(to right, #2c3e50, #4ca1af);
-  background: linear-gradient(to right, #3a7bd5, #3a6073);
-  background: linear-gradient(to right, #4ca1af, #c4e0e5);
-  background: linear-gradient(to right, #403a3e, #be5869);
-  background: linear-gradient(to right, #e53935, #e35d5b);
-  background: linear-gradient(to right, #6441a5, #2a0845);
-  background: linear-gradient(to right, #414d0b, #727a17);
-  background: linear-gradient(to right, #485563, #29323c);
-  background: linear-gradient(to right, #141e30, #243b55);
-  background: linear-gradient(to right, #000000, #434343);
-  background: linear-gradient(to right, #7b43977f, #dc24307f);
-  background: linear-gradient(to right, #00c6ff7f, #0072ff7f);
-  background: rgba(0, 0, 0, 0.25);
-  background: transparent;
-
-  backdrop-filter: blur(5px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-}
-nav .nav-wrapper {
-  padding: 0 3rem;
-}
-nav a {
-  position: relative;
-  text-decoration: none;
-  margin: 0 1rem;
-  color: var(--text-light-color-primary);
-  font-size: 1.25rem;
-}
-
-/* ----------------- */
 /*       Header      */
 /* ----------------- */
 header {
@@ -343,6 +294,16 @@ header p {
   margin-bottom: 2rem;
 }
 
+/*-----------------*/
+/*      Footer        */
+/*-----------------*/
+.copyright {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid var(--color-light-primary);
+  background-color: var(--bg-black);
+  margin: auto;
+}
 /* ----------------- */
 /*        Main       */
 /* ----------------- */
