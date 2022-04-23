@@ -1,0 +1,27 @@
+:root {
+  /* ---- Global vars ---- */
+  /* Background */
+  --dropdown-bg: #222222e2;
+  /* --------------------- */
+}
+.dropdown-menu {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-menu-content {
+	display: none;
+	position: absolute;
+	background-color: var(--dropdown-bg);
+  top: 40px;
+  left: 0;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+.dropdown-menu-content a {
+	text-decoration: none;
+	display: block;
+  margin: 1.25rem;
+}
+.dropdown-menu:hover .dropdown-menu-content {
+	display: block;
+}
