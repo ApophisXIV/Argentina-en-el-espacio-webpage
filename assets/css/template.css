@@ -1,16 +1,15 @@
-/* Adopted design criteria: Mobile first / Desktop first */
-:root{
-    /* Global */
-    --CMP-bg-color: #222222;
-    --CMP-text-color: #eeeeee;
-    /* Add more general vars here */
+@import "root.css";
 
+/* Adopted design criteria: Mobile first / Desktop first */
+.CMP{
     /* Private */
     --CMP-color: #ff0000;
     /* Add more specific vars here */
 }
 
-.CMP{}
+.CMP{
+    /* Write CSS here */
+}
 
 /* Smartphones ----------- */
 @media only screen and (max-width: 425px) {}
