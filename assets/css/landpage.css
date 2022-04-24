@@ -1,23 +1,10 @@
+@import "root.css";
+
 /* Adopted design criteria: Mobile first */
-:root {
-	/* Global */
-	--font-family-primary: "Open sans", sans-serif;
 
-	--font-color-primary: #eee;
-	--font-color-secondary: #111;
-
-	--font-size-xxl: 2.75rem;
-	--font-size-xl: 2.5rem;
-	--font-size-l: 1.5rem;
-	--font-size-m: 1.25rem;
-	--font-size-s: 1rem;
-	--font-size-xs: 0.75rem;
-
-	--bg-primary: #121212;
-	--bg-secondary: #232323;
-
-	/* Private */
-	--landing-light-blue: #33a4b34f;
+.landing {
+    /* Private */
+    --landing-light-blue: #33a4b34f;
 	--landing-white: #ffddee4f;
 	--landing-yellow: #ffd7004f;
 }
@@ -128,7 +115,7 @@
 	}
 }
 @keyframes blink {
-	50% {
+                            	50% {
 		border-color: transparent;
 	}
 }
