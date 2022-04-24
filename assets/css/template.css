@@ -1,0 +1,25 @@
+/* Adopted design criteria: Mobile first / Desktop first */
+:root{
+    /* Global */
+    --CMP-bg-color: #222222;
+    --CMP-text-color: #eeeeee;
+    /* Add more general vars here */
+
+    /* Private */
+    --CMP-color: #ff0000;
+    /* Add more specific vars here */
+}
+
+.CMP{}
+
+/* Smartphones ----------- */
+@media only screen and (max-width: 425px) {}
+/* Tablets and iPads ----------- */
+@media only screen and (min-width: 426px) and (max-width: 768px) {}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 769px) {}
+
+/* Animations --------------------- */
+.animation{}
+
+@keyframes animation{}
