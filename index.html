@@ -1,116 +1,152 @@
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Argentina en el espacio</title>
+		<link rel="icon" href="assets/img/arg.ico" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Argentina en el espacio</title>
-    <link rel="icon" href="assets/img/arg.ico">
+		<!-- Atomic design components -->
+		<link rel="stylesheet" href="assets/css/atomic/buttons.min.css" />
 
+		<!-- Specific styles -->
+		<link rel="stylesheet" href="assets/css/landpage.css" />
+		<link rel="stylesheet" href="assets/css/footer.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 
-    <!-- Atomic design components -->
-    <link rel="stylesheet" href="assets/css/atomic/buttons.css">
-    <link rel="stylesheet" href="assets/css/atomic/form.css">
-    <link rel="stylesheet" href="assets/css/atomic/navbar.css">
-    <link rel="stylesheet" href="assets/css/atomic/dropdown.css">
+		<!-- Icons -->
+		<script src="https://kit.fontawesome.com/1cffaf5fe4.js" crossorigin="anonymous"></script>
+	</head>
 
-    <!-- Specific styles -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-
-<body>
-
-    <!-- ======= Navbar ======= -->
-    <nav>
-        <h3>Historia espacial argentina</h3>
-        <div class="nav-wrapper">
-            <a class="underline-hover" href="_self">Inicio</a>
-            <a class="underline-hover" href="about.html">Acerca de</a>
-            <div class="dropdown-menu">
-                <a class="underline-hover" href="">Servicios</a>
-                <div class="dropdown-menu-content">
-                    <a class="underline-hover" href="#post-satelites">Satelites</a>
-                    <a class="underline-hover" href="#post-lanzaderas">Lanzaderas</a>
+	<body>
+		<!-- ======= Navbar ======= -->
+		<!-- <nav>
+            <h3>Historia espacial argentina</h3>
+            <div class="nav-wrapper">
+                <a class="underline-hover" href="_self">Inicio</a>
+                <a class="underline-hover" href="about.html">Acerca de</a>
+                <div class="dropdown-menu">
+                    <a href="">Servicios</a>
+                    <div class="dropdown-menu-content">
+                        <a class="underline-hover" href="#post-satelites">Satelites</a>
+                        <a class="underline-hover" href="#post-lanzaderas">Lanzaderas</a>
+                    </div>
                 </div>
+                <a class="underline-hover" href="#post-contact">Contacto</a>
             </div>
-            <a class="underline-hover" href="#post-contact">Contacto</a>
-        </div>
-    </nav>
+        </nav> -->
+		<!-- End Navbar -->
 
+		<!-- ======= Home ======= -->
+		<header class="landing">
+			<section class="landing-wrapper">
+				<h1 class="bg-on-text animation-typing">
+					<span>#Argentina</span>
+					<span>en</span><span> el</span>
+					<span>espacio</span>
+				</h1>
+				<p>Breve historia sobre el desarrollo aerospacial <br />argentino en materia satelital y de lanzaderas</p>
+				<a class="at-btn-outline at-btn-outline-white" href="#timeline">Ver más</a>
+			</section>
+		</header>
+		<!-- End Home -->
 
-    <!-- End Navbar -->
+		<!-- ======= Timeline ======= -->
+		<main>
+			<!-- ======= Launchers Section ======= -->
+			<!-- <section class="timeline" id="timeline">
+				<h2 id="post-lanzaderas" class="underline-hover">Lanzaderas</h2>
+				<div class="timeline-wrapper">
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<h4>Un resumen de los distintos proyectos de lanzaderas que tuvo y tiene Argentina</h4>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			<!-- End Launchers Section -->
 
-    <!-- ======= Home ======= -->
-    <header class="parallax">
-        <div>
-            <h1 id="post-inicio">Argentina en el <br>espacio </h1>
-            <p>
-                Una breve historia del desarrollo espacial de
-                nuestro país en relación a lanzaderas espaciales y
-                satélites
-            </p>
-            <button class="btn-t-1" role="button">Exploremos</button>
-        </div>
-    </header>
-    <!-- End Home -->
+			<!-- ======= Satellite Section ======= -->
+			<!-- <section class="timeline">
+				<h2 id="post-satelites" class="underline-hover">Satélites</h2>
+			</section> -->
+			<!-- End Satellite Section -->
+		</main>
+		<!-- End Timeline -->
 
+		<!-- ======= Footer ======= -->
+		<footer class="footer">
+			<!-- ======= Contact ======= -->
+			<form class="contact-form">
+				<h3 id="post-contact">Contactanos</h3>
+				<div class="form-group">
+					<input type="text" class="form-input" id="name" placeholder="Tu nombre" required />
+				</div>
+				<div class="form-group">
+					<input type="email" class="form-input" id="email" placeholder="Correo electrónico" required />
+					<small>Nunca compartiremos tu correo electrónico con nadie más.</small>
+				</div>
+				<div class="form-group">
+					<textarea class="form-input" id="message" rows="3" placeholder="Escribe tu mensaje" required></textarea>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="at-btn-outline at-btn-outline-danger-vibrant" id="form-submit-btn">Enviar</button>
+				</div>
+			</form>
+			<!-- End Contact -->
 
-    <!-- ======= Timeline ======= -->
-    <!-- <main> -->
+			<!-- ======= Copyright ======= -->
+			<p id="copyright">&copy; 2022 Argentina en el espacio | Todos los derechos reservados</p>
+			<!-- End Copyright -->
 
-    <!-- ======= Launchers Section ======= -->
-    <section class="timeline">
-        <h2 id="post-lanzaderas" class="underline-hover">Lanzaderas</h2>
-        <div class="timeline-wrapper">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h4>Un resumen de los distintos proyectos de lanzaderas que tuvo y tiene Argentina </h3>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        </p>
-                </div>
-            </div>
-    </section>
-    <!-- End Launchers Section -->
-
-    <!-- ======= Satellite Section ======= -->
-    <!-- <section class="timeline">
-            <h2 id="post-satelites" class="underline-hover">Satélites</h2>
-        </section> -->
-    <!-- End Satellite Section -->
-
-    <!-- </main> -->
-    <!-- End Timeline -->
-
-    <!-- ======= Contact ======= -->
-    <footer>
-        <!-- Contact form component -->
-        <form class="contact-form">
-            <h3 id="post-contact"> Contactanos</h3>
-            <div class="form-group">
-                <input type="text" class="form-input" id="name" placeholder="Tu nombre" required>
-            </div>
-            <div class="form-group">
-                <input type="email" class="form-input" id="email" placeholder="Correo electrónico" required>
-                <small>Nunca compartiremos tu correo electrónico con nadie más.</small>
-            </div>
-            <div class="form-group">
-                <textarea class="form-input" id="message" rows="3" placeholder="Escribe tu mensaje" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn-base btn-generic-1" id="form-submit-btn">Enviar</button>
-            </div>
-        </form>
-        <div class="copyright">
-            <small>
-                &copy; Copyright 2022. Todos los derechos reservados.
-            </small>
-    </footer>
-
-    <!-- End Contact -->
-
-</body>
-
+			<!-- ======= Social Media ======= -->
+			<section id="social-media">
+				<div class="social-media-wrapper">
+					<div class="social-media-designer">
+						<p>Fanzi Francisco</p>
+						<div>
+							<a href="https://github.com/byFrank99" aria-label="Francisco Fanzi github profile" target="_blank" rel="noopener noreferrer">
+								<i class="fa-brands fa-github"></i>
+							</a>
+							<a href="#" aria-label="Francisco Fanzi Linkedin profile" target="_blank" rel="noopener noreferrer">
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+							<a href="#" aria-label="Francisco Fanzi personal website" target="_blank" rel="noopener noreferrer">
+								<i class="fa-solid fa-globe"></i>
+							</a>
+							<a href="#" aria-label="Francisco Fanzi work email" target="_blank" rel="noopener noreferrer">
+								<i class="fa-regular fa-envelope"></i>
+							</a>
+						</div>
+					</div>
+					<div class="social-media-designer">
+						<p>Rodriguez Guido</p>
+						<div>
+							<a href="https://github.com/ApophisXIV" aria-label="Rodriguez Guido github profile" target="_blank" rel="noopener noreferrer">
+								<i class="fa-brands fa-github"></i>
+							</a>
+							<a
+								href="https://www.linkedin.com/in/guido-e-rodriguez/"
+								aria-label="Rodriguez Guido Linkedin profile"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+							<a href="#" aria-label="Rodriguez Guido personal website" target="_blank" rel="noopener noreferrer">
+								<i class="fa-solid fa-globe"></i>
+							</a>
+							<a href="mailto: guidorodriguezit@gmail.com" aria-label="Rodriguez Guido work email" target="_blank" rel="noopener noreferrer">
+								<i class="fa-regular fa-envelope"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Social Media -->
+		</footer>
+		<!-- End Footer -->
+	</body>
 </html>
