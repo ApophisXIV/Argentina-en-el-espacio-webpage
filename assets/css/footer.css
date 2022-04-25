@@ -1,0 +1,44 @@
+@import "atomic/form.css";
+
+/* Adopted design criteria: Mobile first */
+
+#copyright {
+	font-size: var(--font-size-xs);
+	text-align: center;
+	color: var(--font-color-muted);
+    padding: 1rem;
+}
+#copyright a {
+    color: var(--font-color-muted);
+	text-decoration: none;
+}
+
+#social-media {
+    background: #151515;
+	text-align: center;
+	color: var(--font-color-muted);
+    padding: 0.75rem;
+    /* max-width: 500px; */
+    margin: 0 auto;
+}
+#social-media a {
+	color: #555;
+	text-decoration: none;
+}
+.social-media-wrapper {
+	display: flex;
+	justify-content: space-around;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.social-media-designer {
+    margin: 0 1rem;
+}
+.social-media-designer p{
+    font-size: var(--font-size-xs);
+}
+.social-media-designer div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
