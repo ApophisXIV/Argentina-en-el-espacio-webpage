@@ -15,6 +15,10 @@
 		<link rel="stylesheet" href="assets/css/footer.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 		<!-- Icons -->
 		<script src="https://kit.fontawesome.com/1cffaf5fe4.js" crossorigin="anonymous"></script>
 	</head>
@@ -46,8 +50,8 @@
 					<span>en</span><span> el</span>
 					<span>espacio</span>
 				</h1>
-				<p>Breve historia sobre el desarrollo aerospacial <br />argentino en materia satelital y de lanzaderas</p>
-				<a class="at-btn-outline at-btn-outline-white" href="#timeline">Ver más</a>
+				<p>Breve historia sobre el desarrollo aerospacial argentino <br>en materia satelital y de lanzaderas</p>
+				<a class="at-btn-outline at-btn-outline-white" href="#timeline" id="landing-btn">Ver más</a>
 			</section>
 		</header>
 		<!-- End Home -->
@@ -55,7 +59,7 @@
 		<!-- ======= Timeline ======= -->
 		<main>
 			<!-- ======= Launchers Section ======= -->
-			<!-- <section class="timeline" id="timeline">
+			<section class="timeline" id="timeline">
 				<h2 id="post-lanzaderas" class="underline-hover">Lanzaderas</h2>
 				<div class="timeline-wrapper">
 					<div class="timeline-item">
@@ -65,7 +69,7 @@
 						</div>
 					</div>
 				</div>
-			</section> -->
+			</section>
 			<!-- End Launchers Section -->
 
 			<!-- ======= Satellite Section ======= -->
@@ -148,5 +152,17 @@
 			<!-- End Social Media -->
 		</footer>
 		<!-- End Footer -->
+
+        <!-- ======= Scripts ======= -->
+        <script>
+            const landing = document.querySelector('.landing');
+            landing.addEventListener('mouseenter', () => {
+                document.body.style.overflowY = 'scroll';
+                landing.classList.add('landing-visited');
+            })
+        </script>
+        <script>AOS.init()</script>
+
+        <!-- End Scripts -->
 	</body>
 </html>
