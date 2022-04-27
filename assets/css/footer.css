@@ -36,6 +36,7 @@
 }
 .social-media-designer p{
     font-size: var(--font-size-xs);
+    margin-bottom: 0.5rem;
 }
 .social-media-designer div {
 	display: flex;

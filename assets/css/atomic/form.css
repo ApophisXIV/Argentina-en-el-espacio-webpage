@@ -11,8 +11,8 @@
 	--form-elements-bg: #1f1f1f;
 	--form-elements-active-bg: #3b3b3b;
 	/* Text */
-	--form-text-color: #c0c5ce;
-	--form-text-placeholder: #c0c5ce;
+	--form-text-color: #bbb;
+	--form-text-placeholder: #777;
 	--form-text-padding: 0.375rem 0.75rem;
 	/* Title */
 	--form-title-font-size: 1.5rem;
@@ -22,7 +22,6 @@
 .contact-form {
 	background: var(--form-bg);
 	font-family: var(--form-font-family-primary);
-	font-weight: var(--form-font-weight);
 	padding: 1.5rem;
 }
 .contact-form .form-group {
@@ -36,8 +35,6 @@
 .contact-form h3 {
 	color: var(--form-title-color);
 	font-size: var(--form-title-font-size);
-	font-weight: var(--form-font-weight);
-
 	margin: 0.5rem 0;
 	text-align: center;
 }
@@ -48,22 +45,17 @@
 	padding: var(--form-text-padding);
 	text-align: left;
 	font-size: 0.875rem;
-	font-weight: var(--form-font-weight);
 }
 /* Input */
 .contact-form input {
+    color: var(--form-text-color);
 	background: var(--form-elements-bg);
 	border: var(--form-elements-border);
-	font-size: var(--fs-md);
-	font-weight: var(--form-font-weight);
-
 	line-height: 1.5;
 	margin-top: 0.75rem;
-	height: 2.25rem;
+    font-size: 1rem;
+	height: 48px;
 	padding: var(--form-text-padding);
-	border-radius: var(--form-elements-border-radius);
-	box-shadow: var(--form-3D-effect-inset);
-	color: var(--form-text-placeholder);
 }
 /* Message */
 .contact-form textarea {
@@ -73,17 +65,13 @@
 	line-height: 1.5;
 	margin-top: 1.5rem;
 	padding: var(--form-text-padding);
-	border-radius: var(--form-elements-border-radius);
-	box-shadow: var(--form-3D-effect-inset);
 	font-family: var(--form-font-family-primary);
-	font-size: var(--fs-md);
-	font-weight: var(--form-font-weight);
-	color: var(--form-text-placeholder);
+	font-size: 1rem;
+	color: var(--form-text-color);
 }
 
 /* Submit button */
 .contact-form #form-submit-btn {
-	font-weight: var(--form-font-weight);
 	margin: 1.5rem auto;
 }
 
@@ -97,7 +85,6 @@
 	outline: none;
 	box-shadow: var(--form-3D-effect-outset);
 	background: var(--form-elements-active-bg);
-	color: var(--form-text-placeholder);
 	transform: scale(1.01);
 }
 
