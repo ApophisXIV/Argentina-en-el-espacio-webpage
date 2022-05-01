@@ -3,8 +3,8 @@
 /* Adopted design criteria: Mobile first */
 .card {
 	/* Private */
-    /* TODO: Use vars */
-    /* Add more specific vars here */
+	/* TODO: Use vars */
+	/* Add more specific vars here */
 }
 
 .card-container {
@@ -14,10 +14,9 @@
 
 .card {
 	width: 200px;
-	height: 100%;
 	border: 2px solid #444;
 	border-radius: 0.65rem;
-	margin: 1rem 0;
+	margin: 1rem;
 	transform: skew(0deg, -5deg);
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 	transition: all 0.6s ease-in-out;
