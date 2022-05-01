@@ -14,7 +14,7 @@
 	background-size: cover;
 	-webkit-clip-path: circle(6rem at 50% 52%);
 	clip-path: circle(6rem at 50% 52%);
-	transition: all 0.5s ease-in-out;
+	transition: all 2s ease-in-out;
 }
 .landing-wrapper{
     display: flex;
