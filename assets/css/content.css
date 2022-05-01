@@ -1,0 +1,27 @@
+@import "atomic/root.css";
+
+/* Adopted design criteria: Mobile first */
+.main-content{
+    /* Private */
+    /* TODO: Add vars */
+    /* Add more specific vars here */
+}
+
+.main-content {
+    height: 100vh;
+}
+.main-content h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+/* TODO: Check breakpoints */
+/* Smartphones ----------- */
+@media only screen and (max-width: 425px) {}
+/* Tablets and iPads ----------- */
+@media only screen and (min-width: 426px) and (max-width: 768px) {}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 769px) {}
