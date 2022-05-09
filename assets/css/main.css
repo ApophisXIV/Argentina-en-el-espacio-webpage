@@ -1,29 +1,31 @@
 @import "atomic/root.css";
 
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-html,
-body {
+  }
+  
+  html,
+  body {
 	background-color: var(--bg-primary);
 	font-family: var(--font-family-primary);
 	color: var(--font-color-primary);
-    scroll-behavior: smooth;
-    height: 100vh;
-}
-
-/* Scroll bar style */
-::-webkit-scrollbar {
+	scroll-behavior: smooth;
+	height: 100vh;
+  }
+  
+  /* Scroll bar style */
+  ::-webkit-scrollbar {
 	width: 0.5rem;
 	height: 0.5rem;
-}
-::-webkit-scrollbar-track {
+  }
+  ::-webkit-scrollbar-track {
 	background: var(--bg-primary);
-}
-::-webkit-scrollbar-thumb {
+  }
+  ::-webkit-scrollbar-thumb {
 	background: var(--bg-secondary);
 	border-radius: var(--br-m);
-}
+  }
+  
