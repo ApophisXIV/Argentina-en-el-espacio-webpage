@@ -1,23 +1,24 @@
 @import "root.css";
 
 header {
-	max-width: 500px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
 	height: 100vh;
-    font-family: var(--font-family-secondary);
+	font-family: var(--font-family-secondary);
+	padding: 2rem;
 }
 
 header h1 {
-	font-size: 6rem;
+	font-family: monospace;
+	font-size: 3.5rem;
 	font-weight: bold;
 	line-height: 0.95;
 	margin-bottom: 2rem;
 }
-header h1:after {
+/* header h1:after {
 	max-width: 400px;
 	background-color: var(--bg-secondary);
 	content: "";
@@ -28,16 +29,15 @@ header h1:after {
 	top: 29%;
 	transform: translate(-50%, -50%);
 	z-index: -1;
-}
+} */
 
 header p {
-	font-size: var(--font-size-l);
+	font-size: var(--font-size-m);
 	margin-bottom: 2rem;
 }
 
-header button {
+/* header button {
 	font-size: 16px;
-	font-weight: 200;
 	letter-spacing: 1px;
 	padding: 13px 20px 13px;
 	outline: 0;
@@ -52,7 +52,7 @@ header button {
 
 header button:after {
 	content: "";
-	background-color: #ffe54c;
+	background-color: #fbca1f;
 	width: 100%;
 	z-index: -1;
 	position: absolute;
@@ -65,10 +65,65 @@ header button:after {
 header button:hover:after {
 	top: 0px;
 	left: 0px;
+} */
+
+
+/* CSS */
+header button{
+    border: 2px solid black;
+    padding: 0.75rem 1rem;
+    box-shadow: -0.25rem 0.25rem;
+    font-size: 1.25rem;
+    background-color: #EB596E;
+    outline: none;
+}
+header button:active {
+    transform: translate(-0.05rem, -0.05rem);
+    box-shadow: -0.1rem 0.1rem;
+    background-color: #b64556;
 }
 
-@media (min-width: 768px) {
+
+
+
+/* Tablet and iPad ---------------- */
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 769px) {
+	header {
+		max-width: 1200px;
+	}
+	header h1 {
+		font-size: 6rem;
+		max-width: 600px;
+	}
+	header p {
+		max-width: 500px;
+		font-size: 1.75rem;
+	}
 	header button {
 		padding: 13px 50px 13px;
+	}
+}
+
+/* Animations --------------------- */
+.animation-typing {
+	/* font-family: monospace; */
+	border-right: 3px solid #000;
+	width: 9ch;
+	animation: typing 2s steps(9), blink 0.75s infinite step-end alternate;
+	-moz-animation: typing 2s steps(9), blink 0.75s infinite step-end alternate;
+	overflow: hidden;
+}
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+@keyframes blink {
+	50% {
+		border-color: transparent;
 	}
 }

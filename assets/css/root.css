@@ -1,6 +1,6 @@
 :root {
-	--font-family-primary: "Helvetica Neue", Helvetica, Arial;
-    --font-family-secondary: "Times New Roman", Times, serif;
+	--font-family-primary: "Roboto Slab";
+	--font-family-secondary: "Times New Roman", Times, serif;
 
 	--font-color-primary: #222;
 	--font-color-secondary: #eee;
@@ -18,6 +18,6 @@
 	--br-m: 0.5rem;
 	--br-s: 0.25rem;
 
-	--bg-primary: #fefbf3;
+	--bg-primary: #2F8F9D;
 	--bg-secondary: #68a7ad;
 }

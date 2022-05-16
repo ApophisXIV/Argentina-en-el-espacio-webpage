@@ -3,20 +3,21 @@
 /* Adopted design criteria: Mobile first */
 
 .contact-form {
-    /* General */
+	/* General */
 	--form-elements-max-width: 600px;
 	--form-elements-border: none;
+	--form-elements-border: 2px solid #111;
 	/* Background */
-	--form-bg: #2b2b2b;
-	--form-elements-bg: #1f1f1f;
-	--form-elements-active-bg: #3b3b3b;
+	--form-bg: #C3DBD9;
+	--form-elements-bg: #ffffff;
+	--form-elements-active-bg: #eeeeee;
 	/* Text */
-	--form-text-color: #bbb;
+	--form-text-color: #111;
 	--form-text-placeholder: #777;
 	--form-text-padding: 0.375rem 0.75rem;
 	/* Title */
-	--form-title-font-size: 1.5rem;
-	--form-title-color: #ffffff;
+	--form-title-font-size: 2rem;
+	--form-title-color: #111;
 }
 
 .contact-form {
@@ -35,8 +36,14 @@
 .contact-form h3 {
 	color: var(--form-title-color);
 	font-size: var(--form-title-font-size);
-	margin: 0.5rem 0;
+	margin: 0.5rem auto;
+	padding: 0.75rem;
 	text-align: center;
+	/* border: var(--form-elements-border); */
+	width: min-content;
+	/* border-radius: 2rem; */
+	/* background-color: var(--form-elements-bg); */
+	/* box-shadow: 0.25rem 0.25rem; */
 }
 /* Muted text */
 .contact-form small {
@@ -48,17 +55,19 @@
 }
 /* Input */
 .contact-form input {
-    color: var(--form-text-color);
+	color: var(--form-text-color);
 	background: var(--form-elements-bg);
 	border: var(--form-elements-border);
 	line-height: 1.5;
 	margin-top: 0.75rem;
-    font-size: 1rem;
+	font-size: 1rem;
 	height: 48px;
 	padding: var(--form-text-padding);
+	box-shadow: 0.25rem 0.25rem;
 }
 /* Message */
 .contact-form textarea {
+	box-shadow: 0.25rem 0.25rem;
 	resize: none;
 	background: var(--form-elements-bg);
 	border: var(--form-elements-border);
@@ -72,7 +81,26 @@
 
 /* Submit button */
 .contact-form #form-submit-btn {
-	margin: 1.5rem auto;
+	background: #fbca1f;
+	font-family: inherit;
+	padding: 0.6em 1.3em;
+	font-weight: 900;
+	font-size: 18px;
+	border: 3px solid black;
+	/* border-radius: 0.4em; */
+	box-shadow: 0.1em 0.1em;
+    width: min-content;
+    margin: 1rem auto;
+}
+
+.contact-form #form-submit-btn:hover {
+	transform: translate(-0.05em, -0.05em);
+	box-shadow: 0.15em 0.15em;
+}
+
+.contact-form #form-submit-btn:active {
+	transform: translate(0.05em, 0.05em);
+	box-shadow: 0.05em 0.05em;
 }
 
 /* Active states */
@@ -83,7 +111,6 @@
 .contact-form input:hover,
 .contact-form textarea:hover {
 	outline: none;
-	box-shadow: var(--form-3D-effect-outset);
 	background: var(--form-elements-active-bg);
 	transform: scale(1.01);
 }

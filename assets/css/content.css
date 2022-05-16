@@ -1,61 +1,69 @@
 @import "root.css";
 
 main {
-	margin: 0 auto;
-	background-color: #e8ded2;
-	height: 100vh;
+	background-color: #f7d59c;
 	padding: 1rem 0;
 }
 main h2 {
-    font-family: var(--font-family-secondary);
-	font-size: var(--font-size-xl);
-	border-bottom: 3px solid #d8c7b6;
+	font-family: var(--font-family-primary);
+	font-size: 2.25rem;
+	text-align: center;
+	/* background-color: #fff;
+	box-shadow: 0.35rem 0.35rem;
+	padding: 1rem;
+	width: min-content;
+	margin-left: 2rem;
+	transform: skew(-5deg); */
 }
 .main-wrapper {
-	max-width: 800px;
 	margin: 0 auto;
 }
+
 /* Carousel */
 .gallery {
-	height: 400px;
-	margin-top: 2rem;
+	height: 500px;
+    width: 50%;
+    margin: 0 auto;
+	/* margin: 2rem auto; */
+	/* border: 4px solid #000; */
+	/* border-radius: var(--br-m); */
+	/* overflow: hidden;
+    box-shadow: 0.5rem 0.5rem 0 0 #C06014;
+    background-color: #F3F4ED; */
 }
 .gallery-cell {
-	width: 33%;
+	width: 75%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 2rem;
 }
+.is-selected .mpl-card{
+    transform: rotate(0) scale(1);
+}
+.flickity-page-dots {
+	bottom: 0px !important;
+}
 
 .card {
 	font-family: "Courier New", Courier, monospace;
 	width: 200px;
-	border: 1px solid #444;
+	/* border: 1px solid #444; */
 	border-radius: 0.65rem;
-	transform: skew(0deg, -5deg);
 	transition: all 0.6s ease-in-out;
 }
 
 .card:hover {
 	border: 1px solid #333;
 	transition: all 0.6s ease-in-out;
-	transform: skew(0deg, 0deg);
-}
-.card:hover::after {
-	content: "";
-	position: absolute;
-	border-radius: 16px;
-	filter: blur(18px);
-	z-index: -1;
 }
 .card:hover .card-header,
 .card:hover .card-body,
 .card:hover .card-footer {
-	transform: skew(0deg, 0deg);
+	/* transform: skew(0deg, 0deg); */
 	box-shadow: none;
-	border: none;
+	/* border: none; */
 }
 
 .card-img {
@@ -72,28 +80,41 @@ main h2 {
 	transition: all 0.3s;
 	padding: 0.5rem;
 	background: #fff;
+	box-shadow: -0.25rem 0.25rem;
 }
 .card-body {
 	transform: translate(0.5rem, 0.25rem);
 	transition: all 0.3s;
 	padding: 0.75rem;
-	background-color: #ddd;
+	background-color: #eeeeee;
 	border: 1px solid #111;
+	box-shadow: -0.25rem 0.25rem;
 }
 .card-body .card-title {
-	margin-bottom: 0.5rem;
+	/* margin-bottom: 0.5rem; */
 }
 .card-footer {
-	background: #111;
-	color: #fff;
+	background: #f3c5c5;
 	border: 1px solid #555;
-	border-radius: 0 0 0.3rem 0.3rem;
+	border-radius: 0 0 0.65rem 0.65rem;
 	display: flex;
 	justify-content: center;
 	padding: 0.5rem;
 	min-height: 50px;
 	transition: all 0.3s;
-	transform: translate(0.6rem, 0.8rem);
+	transform: translate(0.5rem, 0.8rem);
 	display: flex;
 	align-items: center;
+	box-shadow: -0.25rem 0.25rem;
+}
+
+/* Tablet and iPad ---------------- */
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 769px) {
+	.gallery-cell {
+		width: 30%;
+	}
 }
