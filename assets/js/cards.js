@@ -1,70 +1,72 @@
-const card_template = (card, style) => `
-<div class="card ${style}">
-    <div class="card-image">
-        <img src="${card.img_url}" alt="" />
-    </div>
-    <div class="card-body">
-        <div class="card-title">
-            <h3>${card.title}</h3>
-            <p>${card.description}</p>
-        </div>
-        <button type="button">
-            <i class="fa-solid fa-eye"></i>
-        </button>
-    </div>
-</div>
+/* ------------------------------- Modal setup ------------------------------ */
+const modal = document.querySelector("#modal");
+const close_btn = document.querySelector("#close-modal");
+close_btn.addEventListener("click", () => {
+	modal.close();
+	document.body.style.overflow = "auto"; // Enable scroll
+});
+
+const open_modal = (content) => {
+	const header = document.querySelector("#modal-header");
+	header.innerHTML = `
+		<h2>${content.title}</h2>
+		<p>${content.description}</p>
+	`;
+	const pills_container = document.querySelector("#modal-pills-container");
+	pills_container.innerHTML = content.pills.map((pill) => `<div class="modal-pill">${pill}</div>`).join("");
+
+	document.body.style.overflow = "hidden"; // Disable scroll
+	modal.showModal();
+};
+
+/* ---------------------------------- Cards --------------------------------- */
+const cards_container = document.querySelector("#main-section");
+const card_template = (card, style, type) => `
+	<div class="card ${style}">
+		<div class="card-image">
+			<img src="${card.img_url}" alt="" />
+		</div>
+		<div class="card-body">
+			<div class="card-title">
+				<h3>${card.title}</h3>
+				<p>${card.description}</p>
+			</div>
+			<button type="button" class="card-button" card-id="${card.title}" card-type="${type}">
+				<i class="fa-solid fa-eye" card-id="${card.title}" card-type="${type}"></i>
+			</button>
+		</div>
+	</div>
 `;
 
-const styles = ["card-t1", "card-t2", "card-t3", "card-t4"];
-const satellites = [
-	{
-		title: "Victor-1",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		img_url: "assets/images/satellites/victor-1.jpg",
-	},
-	{
-		title: "SAC-B",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		img_url: "assets/images/satellites/sac-b.jpg",
-	},
-	// TODO: Add more cards
-	{
-		title: "Victor-1",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		img_url: "assets/images/satellites/victor-1.jpg",
-	},
-	{
-		title: "SAC-B",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		img_url: "assets/images/satellites/sac-b.jpg",
-	},
-];
+// Adding cards to the DOM
+fetch("./assets/js/db.json")
+	.then((res) => res.json())
+	.then((db) => {
+		const db_cards = { satellites: db.satellites, launchers: db.launchers };
+		for (const type in db_cards) {
+			const cards = db_cards[type];
+			const card_themes = ["card-t1", "card-t2", "card-t3", "card-t4"];
+			const cards_html = cards.map((card, i) => card_template(card, card_themes[i % card_themes.length], type));
+			cards_container.innerHTML += `
+			<section>
+				<h2>${type}</h2>
+				<div class="card-container">${cards_html.join("")}</div>
+			</section>
+			`;
+		}
 
-const launchers = [
-	{
-		title: "Tronador II",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		img_url: "assets/images/launchers/tronador-ii.jpg",
-	},
-	{
-		title: "VEX-1A",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		img_url: "assets/images/launchers/vex-1a.png",
-	},
-	{
-		title: "VEX-1B",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		img_url: "assets/images/launchers/vex-1b.png",
-	},
-	{
-		title: "VEX-5A",
-		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		img_url: "assets/images/launchers/vex-5a.jpg",
-	},
-];
-
-for (let i = 0; i < satellites.length; i++)
-	document.querySelectorAll(".card-container")[0].innerHTML += card_template(satellites[i], styles[i % styles.length]);
-
-for (let i = 0; i < launchers.length; i++)
-	document.querySelectorAll(".card-container")[1].innerHTML += card_template(launchers[i], styles[i % styles.length]);
+		// Adding event listeners to cards
+		document.querySelectorAll(".card-button").forEach((button) => {
+			button.addEventListener("click", (e) => {
+				const card_meta = e.target;
+				const card_id = card_meta.getAttribute("card-id"),
+					card_type = card_meta.getAttribute("card-type");
+				const card_data = db_cards[card_type].find((card) => card.title === card_id);
+				open_modal({
+					title: card_data.title,
+					description: card_data.long_description,
+					pills: card_data.pills,
+				});
+			});
+		});
+	});

@@ -12,6 +12,7 @@
 	grid-gap: 2rem;
 	max-width: 1200px;
 	margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .card {
@@ -95,20 +96,6 @@
 	background-color: #252525d2;
 	color: #f5f5f5;
 	transform: scale(1.1);
-}
-
-.card-body table {
-	margin: 0.5rem auto;
-	text-align: left;
-}
-.card-body td {
-	text-align: right;
-}
-.card-body td:nth-child(even) {
-	font-weight: bold;
-	white-space: none;
-	padding-left: 1rem;
-	display: inline-block;
 }
 
 /* Animations --------------------- */

@@ -38,4 +38,5 @@ main h2 {
 	font-weight: 300;
 	margin: 2rem auto;
 	text-align: center;
+    text-transform: capitalize;
 }

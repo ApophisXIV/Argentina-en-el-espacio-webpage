@@ -1,0 +1,134 @@
+{
+    "satellites": [
+        {
+            "title": "Victor-1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "img_url": "assets/images/satellites/victor-1.jpg",
+            "long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "pills": [
+                "INVAP - VENG",
+                "VEX-1B",
+                "2019",
+                "$1.000.000",
+                "3000 kg",
+                "20m (5,5 ft) de altura",
+                "4.5m (13 ft) de largo",
+                "1.5m (4 ft) de ancho"
+            ]
+        },
+        {
+            "title": "SAC-B",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "img_url": "assets/images/satellites/sac-b.jpg",
+            "long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "pills": [
+                "INVAP - VENG",
+                "VEX-1B",
+                "2019",
+                "$1.000.000",
+                "3000 kg",
+                "20m (5,5 ft) de altura",
+                "4.5m (13 ft) de largo",
+                "1.5m (4 ft) de ancho"
+            ]
+        },
+        {
+            "title": "Victor-1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "img_url": "assets/images/satellites/victor-1.jpg",
+            "long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "pills": [
+                "INVAP - VENG",
+                "VEX-1B",
+                "2019",
+                "$1.000.000",
+                "3000 kg",
+                "20m (5,5 ft) de altura",
+                "4.5m (13 ft) de largo",
+                "1.5m (4 ft) de ancho"
+            ]
+        },
+        {
+            "title": "SAC-B",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "img_url": "assets/images/satellites/sac-b.jpg",
+            "long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "pills": [
+                "INVAP - VENG",
+                "VEX-1B",
+                "2019",
+                "$1.000.000",
+                "3000 kg",
+                "20m (5,5 ft) de altura",
+                "4.5m (13 ft) de largo",
+                "1.5m (4 ft) de ancho"
+            ]
+        }
+    ],
+    "launchers": [
+        {
+            "title": "Tronador II",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "img_url": "assets/images/launchers/tronador-ii.jpg",
+            "long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "pills": [
+                "INVAP - VENG",
+                "VEX-1B",
+                "2019",
+                "$1.000.000",
+                "3000 kg",
+                "20m (5,5 ft) de altura",
+                "4.5m (13 ft) de largo",
+                "1.5m (4 ft) de ancho"
+            ]
+        },
+        {
+            "title": "VEX-1A",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "img_url": "assets/images/launchers/vex-1a.png",
+            "long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "pills": [
+                "INVAP - VENG",
+                "VEX-1B",
+                "2019",
+                "$1.000.000",
+                "3000 kg",
+                "20m (5,5 ft) de altura",
+                "4.5m (13 ft) de largo",
+                "1.5m (4 ft) de ancho"
+            ]
+        },
+        {
+            "title": "VEX-1B",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "img_url": "assets/images/launchers/vex-1b.png",
+            "long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "pills": [
+                "INVAP - VENG",
+                "VEX-1B",
+                "2019",
+                "$1.000.000",
+                "3000 kg",
+                "20m (5,5 ft) de altura",
+                "4.5m (13 ft) de largo",
+                "1.5m (4 ft) de ancho"
+            ]
+        },
+        {
+            "title": "VEX-5A",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "img_url": "assets/images/launchers/vex-5a.jpg",
+            "long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "pills": [
+                "INVAP - VENG",
+                "VEX-1B",
+                "2019",
+                "$1.000.000",
+                "3000 kg",
+                "20m (5,5 ft) de altura",
+                "4.5m (13 ft) de largo",
+                "1.5m (4 ft) de ancho"
+            ]
+        }
+    ]
+}
