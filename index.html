@@ -1,243 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Argentina en el espacio</title>
+		<link rel="icon" href="assets/images/arg.ico" />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Argentina en el espacio</title>
-	<link rel="icon" href="assets/img/arg.ico" />
+		<!-- Specific styles -->
+		<link rel="stylesheet" href="assets/css/navbar.css" />
+		<link rel="stylesheet" href="assets/css/home.css" />
+		<link rel="stylesheet" href="assets/css/cards.css" />
+		<link rel="stylesheet" href="assets/css/modal.css" />
+		<link rel="stylesheet" href="assets/css/form.css" />
+		<link rel="stylesheet" href="assets/css/footer.css" />
 
-	<!-- Atomic design components -->
-	<link rel="stylesheet" href="assets/css/atomic/buttons.css" />
-	<link rel="stylesheet" href="assets/css/atomic/cards.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 
-	<!-- Specific styles -->
-	<link rel="stylesheet" href="assets/css/landpage.css" />
-	<link rel="stylesheet" href="assets/css/footer.css" />
-	<link rel="stylesheet" href="assets/css/content.css" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/navbar.css" />
+		<!-- Icons -->
+		<script src="https://kit.fontawesome.com/1cffaf5fe4.js" crossorigin="anonymous"></script>
+	</head>
 
-	<!-- Flickity -->
-	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
-	<!-- Icons -->
-	<script src="https://kit.fontawesome.com/1cffaf5fe4.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-	<!-- ======= Navbar ======= -->
-	<header>
+	<body>
+		<!-- ======= Navbar ======= -->
 		<nav>
-			<input type="checkbox" id="check">
-			<label for="check" class="bar-btn">
-				<i class="fa-solid fa-bars"></i>
+			<div>Argentina espacial</div>
+			<input id="menu-toggle" type="checkbox" />
+			<label class="menu-button-container" for="menu-toggle">
+				<div class="menu-button"></div>
 			</label>
-			<ul class="nav-menu">
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Acerca de</a></li>
-
-				<li>
-					<details>
-						<summary> Servicios </summary>
-						<ul>
-							<li> <a href="#">Satellites</a> </li>
-							<li> <a href="#">Cohetes</a> </li>
-
-						</ul>
-					</details>
-				</li>
-				<li><a href="#">Contacto</a></li>
+			<ul class="menu">
+				<li><a href="#home-section">Acerca de</a></li>
+				<li><a href="#satellite-section">Satélites</a></li>
+				<li><a href="#launchers-section">Lanzaderas</a></li>
+				<li><a href="#contact-section">Contacto</a></li>
 			</ul>
 		</nav>
-	</header>
-	<!-- ======= End Navbar ======= -->
+		<!-- ======= End Navbar ======= -->
 
-	<!-- ======= Home ======= -->
-	<header class="landing">
-		<section class="landing-wrapper">
-			<h1 class="bg-on-text animation-typing">
-				<span>#Argentina</span>
-				<span>en</span><span> el</span>
-				<span>espacio</span>
-			</h1>
-			<p>Breve historia sobre el desarrollo aerospacial argentino <br />en materia satelital y de lanzaderas</p>
-			<a class="at-btn-outline at-btn-outline-white" href="#timeline" id="landing-btn">Ver más</a>
+		<!-- ======= Home ======= -->
+		<section class="home-section" id="home-section">
+			<section class="landing-text-wrapper">
+				<h1 class="animation-typing">Argentina en el espacio</h1>
+				<h3>Breve historia sobre el desarrollo espacial argentino</h3>
+				<button type="button">
+					<i class="fa-solid fa-angles-down"></i>
+				</button>
+			</section>
 		</section>
-	</header>
-	<!-- End Home -->
+		<!-- End Home -->
 
-	<!-- ======= Timeline ======= -->
-	<main class="main-content">
-		<!-- ======= Satellites section ======= -->
-		<h2 class="underline-hover">Satélites</h2>
-		<section class="gallery js-flickity"
-			data-flickity-options='{ "wrapAround": true, "resize": true, "setGallerySize": false}'>
-			<div class="gallery-cell">
-				<div class="card">
-					<div class="card-header">
-						<img class="card-img" src="assets/img/saocom-1a.png" alt="SAOCOM-1A" />
-					</div>
-					<div class="card-body">
-						<h3 class="card-title">SAOCOM-1A</h3>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					</div>
-					<div class="card-footer">Ver más</div>
+		<!-- ======= Content ======= -->
+		<main id="main-section"></main>
+        <!-- Modal -->
+		<dialog class="modal" id="modal">
+			<div class="modal-header" id="modal-header"></div>
+			<div class="modal-pills-container" id="modal-pills-container"></div>
+			<button type="button" id="close-modal">
+				<i class="fa-solid fa-check"></i>
+			</button>
+		</dialog>
+		<!-- End Content -->
+
+		<!-- ======= Footer ======= -->
+		<footer class="footer" id="contact-section">
+			<!-- ======= Contact ======= -->
+			<form class="contact-form">
+				<h2 id="post-contact">Contactanos</h2>
+				<div class="form-group">
+					<input type="text" class="form-input" id="name" placeholder="Tu nombre" required />
 				</div>
-			</div>
-			<div class="gallery-cell">
-				<div class="card">
-					<div class="card-header">
-						<img class="card-img" src="assets/img/saocom-1a.png" alt="SAOCOM-1A" />
-					</div>
-					<div class="card-body">
-						<h3 class="card-title">SAOCOM-1A</h3>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					</div>
-					<div class="card-footer">Ver más</div>
+				<div class="form-group">
+					<input type="email" class="form-input" id="email" placeholder="Correo electrónico" required />
+					<small>Nunca compartiremos tu correo electrónico con nadie más.</small>
 				</div>
-			</div>
-			<div class="gallery-cell">
-				<div class="card">
-					<div class="card-header">
-						<img class="card-img" src="assets/img/saocom-1a.png" alt="SAOCOM-1A" />
-					</div>
-					<div class="card-body">
-						<h3 class="card-title">SAOCOM-1A</h3>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					</div>
-					<div class="card-footer">Ver más</div>
+				<div class="form-group">
+					<textarea class="form-input" id="message" rows="3" placeholder="Escribe tu mensaje" required></textarea>
 				</div>
-			</div>
-			<div class="gallery-cell">
-				<div class="card">
-					<div class="card-header">
-						<img class="card-img" src="assets/img/saocom-1a.png" alt="SAOCOM-1A" />
-					</div>
-					<div class="card-body">
-						<h3 class="card-title">SAOCOM-1A</h3>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					</div>
-					<div class="card-footer">Ver más</div>
+				<div class="form-group">
+					<button type="submit" id="form-submit-btn">
+						<i class="fa-solid fa-paper-plane"></i>
+					</button>
 				</div>
-			</div>
-		</section>
-		<!-- End satelites section -->
+			</form>
+			<div id="error"></div>
+			<!-- End Contact -->
 
-		<!-- ======== Launchers section ======== -->
-		<h2 class="underline-hover">Cohetes</h2>
-		<section class="gallery js-flickity"
-			data-flickity-options='{ "wrapAround": false, "resize": true, "setGallerySize": false}'>
-			<div class="gallery-cell">
-				<div class="card">
-					<div class="card-header">
-						<img class="card-img" src="assets/img/saocom-1a.png" alt="SAOCOM-1A" />
+			<!-- ======= Copyright ======= -->
+			<p id="copyright">&copy; 2022 Argentina en el espacio | Todos los derechos reservados</p>
+			<!-- End Copyright -->
+
+			<!-- ======= Social Media ======= -->
+			<section id="social-media">
+				<div class="social-media-wrapper">
+					<div class="social-media-designer">
+						<p>Fanzi Francisco</p>
+						<div>
+							<a href="https://github.com/byFrank99" aria-label="Francisco Fanzi github profile" target="_blank" rel="noopener noreferrer">
+								<i class="fa-brands fa-github"></i>
+							</a>
+							<a href="#" aria-label="Francisco Fanzi Linkedin profile" target="_blank" rel="noopener noreferrer">
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+							<a href="#" aria-label="Francisco Fanzi personal website" target="_blank" rel="noopener noreferrer">
+								<i class="fa-solid fa-globe"></i>
+							</a>
+							<a href="#" aria-label="Francisco Fanzi work email" target="_blank" rel="noopener noreferrer">
+								<i class="fa-regular fa-envelope"></i>
+							</a>
+						</div>
 					</div>
-					<div class="card-body">
-						<h3 class="card-title">SAOCOM-1A</h3>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					</div>
-					<div class="card-footer">Ver más</div>
-				</div>
-			</div>
-
-		</section>
-		<!-- End launchers section -->
-	</main>
-	<!-- End Timeline -->
-
-	<!-- ======= Footer ======= -->
-	<footer class="footer">
-		<!-- ======= Contact ======= -->
-		<form class="contact-form">
-			<h3 id="post-contact">Contactanos</h3>
-			<div class="form-group">
-				<input type="text" class="form-input" id="name" placeholder="Tu nombre" required />
-			</div>
-			<div class="form-group">
-				<input type="email" class="form-input" id="email" placeholder="Correo electrónico" required />
-				<small>Nunca compartiremos tu correo electrónico con nadie más.</small>
-			</div>
-			<div class="form-group">
-				<textarea class="form-input" id="message" rows="3" placeholder="Escribe tu mensaje" required></textarea>
-			</div>
-			<div class="form-group">
-				<!-- <button type="submit" class="at-btn-outline at-btn-outline-danger-vibrant"
-					id="form-submit-btn">Enviar</button> -->
-				<input type="submit" onclick='return enviarFormulario();' value="Enviar">
-			</div>
-		</form>
-		<div id='error'></div>
-		<!-- End Contact -->
-
-		<!-- ======= Copyright ======= -->
-		<p id="copyright">&copy; 2022 Argentina en el espacio | Todos los derechos reservados</p>
-		<!-- End Copyright -->
-
-		<!-- ======= Social Media ======= -->
-		<section id="social-media">
-			<div class="social-media-wrapper">
-				<div class="social-media-designer">
-					<p>Fanzi Francisco</p>
-					<div>
-						<a href="https://github.com/byFrank99" aria-label="Francisco Fanzi github profile"
-							target="_blank" rel="noopener noreferrer">
-							<i class="fa-brands fa-github"></i>
-						</a>
-						<a href="#" aria-label="Francisco Fanzi Linkedin profile" target="_blank"
-							rel="noopener noreferrer">
-							<i class="fa-brands fa-linkedin"></i>
-						</a>
-						<a href="#" aria-label="Francisco Fanzi personal website" target="_blank"
-							rel="noopener noreferrer">
-							<i class="fa-solid fa-globe"></i>
-						</a>
-						<a href="#" aria-label="Francisco Fanzi work email" target="_blank" rel="noopener noreferrer">
-							<i class="fa-regular fa-envelope"></i>
-						</a>
+					<div class="social-media-designer">
+						<p>Rodriguez Guido</p>
+						<div>
+							<a href="https://github.com/ApophisXIV" aria-label="Rodriguez Guido github profile" target="_blank" rel="noopener noreferrer">
+								<i class="fa-brands fa-github"></i>
+							</a>
+							<a
+								href="https://www.linkedin.com/in/guido-e-rodriguez/"
+								aria-label="Rodriguez Guido Linkedin profile"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+							<a href="#" aria-label="Rodriguez Guido personal website" target="_blank" rel="noopener noreferrer">
+								<i class="fa-solid fa-globe"></i>
+							</a>
+							<a href="mailto: guidorodriguezit@gmail.com" aria-label="Rodriguez Guido work email" target="_blank" rel="noopener noreferrer">
+								<i class="fa-regular fa-envelope"></i>
+							</a>
+						</div>
 					</div>
 				</div>
-				<div class="social-media-designer">
-					<p>Rodriguez Guido</p>
-					<div>
-						<a href="https://github.com/ApophisXIV" aria-label="Rodriguez Guido github profile"
-							target="_blank" rel="noopener noreferrer">
-							<i class="fa-brands fa-github"></i>
-						</a>
-						<a href="https://www.linkedin.com/in/guido-e-rodriguez/"
-							aria-label="Rodriguez Guido Linkedin profile" target="_blank" rel="noopener noreferrer">
-							<i class="fa-brands fa-linkedin"></i>
-						</a>
-						<a href="#" aria-label="Rodriguez Guido personal website" target="_blank"
-							rel="noopener noreferrer">
-							<i class="fa-solid fa-globe"></i>
-						</a>
-						<a href="mailto: guidorodriguezit@gmail.com" aria-label="Rodriguez Guido work email"
-							target="_blank" rel="noopener noreferrer">
-							<i class="fa-regular fa-envelope"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Social Media -->
-	</footer>
-	<!-- End Footer -->
+			</section>
+			<!-- End Social Media -->
+		</footer>
+		<!-- End Footer -->
 
-	<!-- ======= Scripts ======= -->
-	<script>
-		document.body.onscroll = () => {
-			landing.classList.add("landing-visited");
-		};
-
-		const landing = document.querySelector(".landing");
-		landing.addEventListener("mouseenter", () => {
-			landing.classList.add("landing-visited");
-		});
-	</script>
-	<!-- End Scripts -->
-</body>
-
+		<!-- ======= Scripts ======= -->
+		<script src="assets/js/cards.js" type="module" defer></script>
+		<!-- End Scripts -->
+	</body>
 </html>

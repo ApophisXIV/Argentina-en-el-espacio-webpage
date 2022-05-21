@@ -3,20 +3,23 @@
 /* Adopted design criteria: Mobile first */
 
 .contact-form {
-    /* General */
+	/* General */
 	--form-elements-max-width: 600px;
 	--form-elements-border: none;
+	--form-elements-border-radius: 0.25rem;
 	/* Background */
-	--form-bg: #2b2b2b;
-	--form-elements-bg: #1f1f1f;
-	--form-elements-active-bg: #3b3b3b;
+	--form-bg: #222;
+	--form-elements-bg: #444;
+	--form-elements-border: none;
+	--form-elements-hover-bg: #666;
+	--form-elements-hover-border: none;
 	/* Text */
-	--form-text-color: #bbb;
-	--form-text-placeholder: #777;
+	--form-text-color: #eee;
+	--form-text-placeholder: #aaa;
 	--form-text-padding: 0.375rem 0.75rem;
 	/* Title */
-	--form-title-font-size: 1.5rem;
-	--form-title-color: #ffffff;
+	--form-title-font-size: 2rem;
+	--form-title-color: #eee;
 }
 
 .contact-form {
@@ -32,15 +35,16 @@
 }
 
 /* Title */
-.contact-form h3 {
+.contact-form h2 {
 	color: var(--form-title-color);
 	font-size: var(--form-title-font-size);
 	margin: 0.5rem 0;
 	text-align: center;
+	font-weight: 300;
 }
 /* Muted text */
 .contact-form small {
-	color: var(--font-color-muted);
+	color: #6c757d;
 	margin-top: 0.25rem;
 	padding: var(--form-text-padding);
 	text-align: left;
@@ -48,14 +52,15 @@
 }
 /* Input */
 .contact-form input {
-    color: var(--form-text-color);
+	color: var(--form-text-color);
 	background: var(--form-elements-bg);
 	border: var(--form-elements-border);
 	line-height: 1.5;
 	margin-top: 0.75rem;
-    font-size: 1rem;
+	font-size: 1rem;
 	height: 48px;
 	padding: var(--form-text-padding);
+	border-radius: var(--form-elements-border-radius);
 }
 /* Message */
 .contact-form textarea {
@@ -67,12 +72,29 @@
 	padding: var(--form-text-padding);
 	font-family: var(--form-font-family-primary);
 	font-size: 1rem;
+	border-radius: var(--form-elements-border-radius);
 	color: var(--form-text-color);
 }
 
 /* Submit button */
 .contact-form #form-submit-btn {
 	margin: 1.5rem auto;
+	width: 100px;
+	height: 50px;
+	border-radius: 2rem;
+	font-size: 1.25rem;
+	margin-top: 1rem;
+	background-color: #ff7a5a;
+	border: 1px solid #ff7a5a;
+	color: #252525dd;
+	outline: none;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.contact-form #form-submit-btn:hover {
+	background-color: #252525dd;
+	color: #ff7a5a;
+	transform: scale(1.05) translateY(5px);
 }
 
 /* Active states */
@@ -83,9 +105,9 @@
 .contact-form input:hover,
 .contact-form textarea:hover {
 	outline: none;
-	box-shadow: var(--form-3D-effect-outset);
-	background: var(--form-elements-active-bg);
+	background: var(--form-elements-hover-bg);
 	transform: scale(1.01);
+	border: var(--form-elements-hover-border);
 }
 
 /* Placeholders */
