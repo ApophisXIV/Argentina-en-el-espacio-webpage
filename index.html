@@ -1,145 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Argentina en el espacio</title>
-		<link rel="icon" href="assets/images/arg.ico" />
 
-		<!-- Specific styles -->
-		<link rel="stylesheet" href="assets/css/navbar.css" />
-		<link rel="stylesheet" href="assets/css/home.css" />
-		<link rel="stylesheet" href="assets/css/cards.css" />
-		<link rel="stylesheet" href="assets/css/modal.css" />
-		<link rel="stylesheet" href="assets/css/form.css" />
-		<link rel="stylesheet" href="assets/css/footer.css" />
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Argentina en el espacio</title>
+	<link rel="icon" href="assets/images/arg.ico" />
 
-		<link rel="stylesheet" href="assets/css/main.css" />
+	<!-- Specific styles -->
+	<link rel="stylesheet" href="assets/css/navbar.css" />
+	<link rel="stylesheet" href="assets/css/home.css" />
+	<link rel="stylesheet" href="assets/css/about.css" />
+	<link rel="stylesheet" href="assets/css/cards.css" />
+	<link rel="stylesheet" href="assets/css/modal.css" />
+	<link rel="stylesheet" href="assets/css/form.css" />
+	<link rel="stylesheet" href="assets/css/footer.css" />
 
-		<!-- Icons -->
-		<script src="https://kit.fontawesome.com/1cffaf5fe4.js" crossorigin="anonymous"></script>
-	</head>
+	<link rel="stylesheet" href="assets/css/main.css" />
 
-	<body>
-		<!-- ======= Navbar ======= -->
+	<!-- Icons -->
+	<script src="https://kit.fontawesome.com/1cffaf5fe4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- ======= Navbar ======= -->
+	<div class="navbar">
 		<nav>
-			<div>Argentina espacial</div>
-			<input id="menu-toggle" type="checkbox" />
-			<label class="menu-button-container" for="menu-toggle">
-				<div class="menu-button"></div>
-			</label>
-			<ul class="menu">
-				<li><a href="#home-section">Acerca de</a></li>
-				<li><a href="#satellite-section">Satélites</a></li>
-				<li><a href="#launchers-section">Lanzaderas</a></li>
-				<li><a href="#contact-section">Contacto</a></li>
-			</ul>
+			<input type="checkbox" id="show-menu">
+			<label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+			<div class="content">
+				<ul class="links">
+					<li><a href="#home-section">Inicio</a></li>
+					<li><a href="#about-section">About</a></li>
+					<li>
+						<a href="#main-section" class="desktop-link">Servicios</a>
+						<input type="checkbox" id="show-features">
+						<label for="show-features">Servicios</label>
+						<ul>
+							<li><a href="#satellites-section">Satelites</a></li>
+							<li><a href="#lauchers-section">Cohetes</a></li>
+						</ul>
+					</li>
+					<li><a href="#contact-section">Contacto</a></li>
+				</ul>
+				</li>
+				</ul>
+			</div>
 		</nav>
-		<!-- ======= End Navbar ======= -->
+	</div>
+	<!-- ======= End Navbar ======= -->
 
-		<!-- ======= Home ======= -->
-		<section class="home-section" id="home-section">
-			<section class="landing-text-wrapper">
-				<h1 class="animation-typing">Argentina en el espacio</h1>
-				<h3>Breve historia sobre el desarrollo espacial argentino</h3>
-				<button type="button">
-					<i class="fa-solid fa-angles-down"></i>
-				</button>
-			</section>
+	<!-- ======= Home ======= -->
+	<section class="home-section" id="home-section">
+		<section class="landing-text-wrapper">
+			<h1 class="animation-typing">Argentina en el espacio</h1>
+			<h3>Breve historia sobre el desarrollo espacial argentino</h3>
+			<a href="#about-section"><i class="fa-solid fa-angles-down"></i>
+
+			</a>
 		</section>
-		<!-- End Home -->
+	</section>
+	<!-- End Home -->
 
-		<!-- ======= Content ======= -->
-		<main id="main-section"></main>
-        <!-- Modal -->
-		<dialog class="modal" id="modal">
-			<div class="modal-header" id="modal-header"></div>
-			<div class="modal-pills-container" id="modal-pills-container"></div>
-			<button type="button" id="close-modal">
-				<i class="fa-solid fa-check"></i>
+	<!-- About -->
+	<section id="about-section">
+		<h2>¿Quienes somos?</h2>
+		<div class="container">
+			<div class="img-container"></div>
+
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusamus aspernatur, magnam,
+				animi
+				maiores a et dolorum ab sit odit facere repellendus unde voluptatum eius nemo commodi laboriosam
+				consequuntur accusantium!
+			</p>
+		</div>
+	</section>
+
+
+	<!-- End About -->
+	<!-- ======= Content ======= -->
+	<main id="main-section"></main>
+	<!-- Modal -->
+	<dialog class="modal" id="modal">
+		<div class="modal-header" id="modal-header"></div>
+		<div class="modal-pills-container" id="modal-pills-container"></div>
+		<button type="button" id="close-modal">
+			<i class="fa-solid fa-check"></i>
+		</button>
+	</dialog>
+	<!-- End Content -->
+
+	<!-- ======= Footer ======= -->
+	<footer class="footer" id="contact-section">
+		<!-- ======= Contact ======= -->
+		<form class="contact-form" id="contact-form">
+			<h2 id="post-contact">Contactanos</h2>
+			<div class="form-group">
+				<input type="text" name="name" class="form-input" id="name" placeholder="Tu nombre" />
+				<i class="fa-solid fa-circle-exclamation icon-error hide" id="icon-name"></i>
+			</div>
+			<div class="error-feedback" id="error-name"></div>
+			<div class="form-group">
+				<input type="email" name="email" class="form-input" id="email" placeholder="Correo electrónico" />
+				<i class="fa-solid fa-circle-exclamation icon-error hide" id="icon-email"></i>
+			</div>
+			<div class="error-feedback" id="error-email"></div>
+			<div class="form-group">
+
+				<small>Nunca compartiremos tu correo electrónico con nadie más.</small>
+			</div>
+			<div class="form-group">
+				<textarea class="form-input" name="message" id="message" rows="3"
+					placeholder="Escribe tu mensaje"></textarea>
+				<i class="fa-solid fa-circle-exclamation icon-error hide" id="icon-message"></i>
+			</div>
+			<div class="error-feedback" id="error-message"></div>
+
+			<button type="submit" id="form-submit-btn">
+				<i class="fa-solid fa-paper-plane"></i>
 			</button>
-		</dialog>
-		<!-- End Content -->
+		</form>
+		<div id="error"></div>
+		<!-- End Contact -->
 
-		<!-- ======= Footer ======= -->
-		<footer class="footer" id="contact-section">
-			<!-- ======= Contact ======= -->
-			<form class="contact-form">
-				<h2 id="post-contact">Contactanos</h2>
-				<div class="form-group">
-					<input type="text" class="form-input" id="name" placeholder="Tu nombre" required />
-				</div>
-				<div class="form-group">
-					<input type="email" class="form-input" id="email" placeholder="Correo electrónico" required />
-					<small>Nunca compartiremos tu correo electrónico con nadie más.</small>
-				</div>
-				<div class="form-group">
-					<textarea class="form-input" id="message" rows="3" placeholder="Escribe tu mensaje" required></textarea>
-				</div>
-				<div class="form-group">
-					<button type="submit" id="form-submit-btn">
-						<i class="fa-solid fa-paper-plane"></i>
-					</button>
-				</div>
-			</form>
-			<div id="error"></div>
-			<!-- End Contact -->
+		<!-- ======= Copyright ======= -->
+		<p id="copyright">&copy; 2022 Argentina en el espacio | Todos los derechos reservados</p>
+		<!-- End Copyright -->
 
-			<!-- ======= Copyright ======= -->
-			<p id="copyright">&copy; 2022 Argentina en el espacio | Todos los derechos reservados</p>
-			<!-- End Copyright -->
-
-			<!-- ======= Social Media ======= -->
-			<section id="social-media">
-				<div class="social-media-wrapper">
-					<div class="social-media-designer">
-						<p>Fanzi Francisco</p>
-						<div>
-							<a href="https://github.com/byFrank99" aria-label="Francisco Fanzi github profile" target="_blank" rel="noopener noreferrer">
-								<i class="fa-brands fa-github"></i>
-							</a>
-							<a href="#" aria-label="Francisco Fanzi Linkedin profile" target="_blank" rel="noopener noreferrer">
-								<i class="fa-brands fa-linkedin"></i>
-							</a>
-							<a href="#" aria-label="Francisco Fanzi personal website" target="_blank" rel="noopener noreferrer">
-								<i class="fa-solid fa-globe"></i>
-							</a>
-							<a href="#" aria-label="Francisco Fanzi work email" target="_blank" rel="noopener noreferrer">
-								<i class="fa-regular fa-envelope"></i>
-							</a>
-						</div>
-					</div>
-					<div class="social-media-designer">
-						<p>Rodriguez Guido</p>
-						<div>
-							<a href="https://github.com/ApophisXIV" aria-label="Rodriguez Guido github profile" target="_blank" rel="noopener noreferrer">
-								<i class="fa-brands fa-github"></i>
-							</a>
-							<a
-								href="https://www.linkedin.com/in/guido-e-rodriguez/"
-								aria-label="Rodriguez Guido Linkedin profile"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<i class="fa-brands fa-linkedin"></i>
-							</a>
-							<a href="#" aria-label="Rodriguez Guido personal website" target="_blank" rel="noopener noreferrer">
-								<i class="fa-solid fa-globe"></i>
-							</a>
-							<a href="mailto: guidorodriguezit@gmail.com" aria-label="Rodriguez Guido work email" target="_blank" rel="noopener noreferrer">
-								<i class="fa-regular fa-envelope"></i>
-							</a>
-						</div>
+		<!-- ======= Social Media ======= -->
+		<section id="social-media">
+			<div class="social-media-wrapper">
+				<div class="social-media-designer">
+					<p>Fanzi Francisco</p>
+					<div>
+						<a href="https://github.com/byFrank99" aria-label="Francisco Fanzi github profile"
+							target="_blank" rel="noopener noreferrer">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a href="#" aria-label="Francisco Fanzi Linkedin profile" target="_blank"
+							rel="noopener noreferrer">
+							<i class="fa-brands fa-linkedin"></i>
+						</a>
+						<a href="#" aria-label="Francisco Fanzi personal website" target="_blank"
+							rel="noopener noreferrer">
+							<i class="fa-solid fa-globe"></i>
+						</a>
+						<a href="#" aria-label="Francisco Fanzi work email" target="_blank" rel="noopener noreferrer">
+							<i class="fa-regular fa-envelope"></i>
+						</a>
 					</div>
 				</div>
-			</section>
-			<!-- End Social Media -->
-		</footer>
-		<!-- End Footer -->
+				<div class="social-media-designer">
+					<p>Rodriguez Guido</p>
+					<div>
+						<a href="https://github.com/ApophisXIV" aria-label="Rodriguez Guido github profile"
+							target="_blank" rel="noopener noreferrer">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a href="https://www.linkedin.com/in/guido-e-rodriguez/"
+							aria-label="Rodriguez Guido Linkedin profile" target="_blank" rel="noopener noreferrer">
+							<i class="fa-brands fa-linkedin"></i>
+						</a>
+						<a href="#" aria-label="Rodriguez Guido personal website" target="_blank"
+							rel="noopener noreferrer">
+							<i class="fa-solid fa-globe"></i>
+						</a>
+						<a href="mailto: guidorodriguezit@gmail.com" aria-label="Rodriguez Guido work email"
+							target="_blank" rel="noopener noreferrer">
+							<i class="fa-regular fa-envelope"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Social Media -->
+	</footer>
+	<!-- End Footer -->
 
-		<!-- ======= Scripts ======= -->
-		<script src="assets/js/cards.js" type="module" defer></script>
-		<!-- End Scripts -->
-	</body>
+	<!-- ======= Scripts ======= -->
+	<script src="assets/js/cards.js" type="module" defer></script>
+	<script src="assets/js/validation.js" type="text/javascript" defer></script>
+	<!-- End Scripts -->
+</body>
+
 </html>

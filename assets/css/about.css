@@ -1,0 +1,25 @@
+#about-section .container {
+	display: flex;
+	justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about-section h2 {
+	text-transform: none;
+}
+
+#about-section p{
+    max-width: 35%;
+}
+
+#about-section .img-container {
+	background-image: url(../images/about.png);
+	background-size: cover;
+	background-position: center center;
+	height: 300px;
+	width: 600px;
+	border-radius: 10px;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}

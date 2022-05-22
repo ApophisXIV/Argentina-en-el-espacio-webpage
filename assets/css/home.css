@@ -52,12 +52,11 @@
 	margin-bottom: 1rem;
 }
 
-.home-section button {
+.home-section a {
 	height: 60px;
 	width: 60px;
 	border-radius: 50%;
 	margin: 0 auto;
-
 	border: none;
 	background: var(--button-color);
 	color: #222;
@@ -70,9 +69,13 @@
 	align-items: center;
 	transition: all 0.3s ease-in-out;
 	box-shadow: 0.25rem 0.25rem 1rem #00000080;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-decoration: none;
 }
-.home-section button:hover,
-.home-section button:active {
+.home-section a:hover,
+.home-section a:active {
 	background: var(--button-hover-color);
 	color: #fff;
 	transform: translateY(-0.25rem);
@@ -94,9 +97,9 @@
 	.home-section h2 {
 		font-size: 1.5rem;
 	}
-	.home-section button {
+	.home-section a {
 		width: 200px;
-		border-radius: 0.25rem;
+		border-radius: 2rem;
 		margin: 0;
 	}
 	.home-section section {
