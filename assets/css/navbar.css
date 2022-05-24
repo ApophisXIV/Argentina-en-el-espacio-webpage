@@ -32,7 +32,7 @@ nav .content .links {
 }
 .content .links li a,
 .content .links li label {
-	color: rgb(210, 210, 210); /*Color de la letras*/
+	color: #bbb; /*Color de la letras*/
 	font-size: 18px;
 	font-weight: 500;
 	margin: 0 1rem;
@@ -59,16 +59,13 @@ nav .content .links {
 .content .links li label:hover {
 	background-size: 100% 3px;
 }
-nav .search-icon,
 nav .menu-icon {
-	color: #60605f; /*color del icono-hamburger*/
+	color: #bbb; /*color del icono-hamburger*/
 	font-size: 18px;
 	cursor: pointer;
 	line-height: 70px;
 	width: 50px;
 	text-align: center;
-}
-nav .menu-icon {
 	display: none;
 }
 
@@ -78,7 +75,7 @@ nav input[type="checkbox"] {
 /* Dropdown Menu code start */
 .content .links ul {
 	position: absolute;
-	background: #171c24;
+	background: #1b1b1b90;
 	top: 80px;
 	z-index: -1;
 	opacity: 0;
@@ -113,7 +110,6 @@ nav input[type="checkbox"] {
 		max-width: 100%;
 		padding: 0 20px;
 		background: #1b1b1b;
-
 	}
 	nav .content .links {
 		margin-left: 30px;
@@ -133,7 +129,7 @@ nav input[type="checkbox"] {
 	nav .content .links {
 		display: block;
 		position: fixed;
-		background: #14181f; /*Fondo de menu-hamburger*/
+		background: #1b1b1b; /*Fondo de menu-hamburger*/
 		height: 100%;
 		width: 100%;
 		top: 70px;
@@ -186,7 +182,7 @@ nav input[type="checkbox"] {
 	}
 }
 @media screen and (max-width: 400px) {
-	nav nav {
+	nav {
 		padding: 0 10px;
 	}
 }
