@@ -24,7 +24,7 @@ const formulario = {
 	submit: select("#btn-submit"),
 };
 
-const set_ui = (is_valid = false, element, msg = "Verifique este campo!") => {
+const set_ui = (is_valid = false, element,msg) => {
 	element.icon.classList.remove("hide");
 	if (is_valid) {
 		element.obj.style.border = "1px solid #36AE7C";
@@ -61,11 +61,11 @@ formulario.form.addEventListener("submit", (e) => {
 });
 
 formulario.name.obj.addEventListener("input", (e) => {
-	set_ui(is_a_valid_name.test(e.target.value), formulario.name, msg = "Verifique este nombre!");
+	set_ui(is_a_valid_name.test(e.target.value), formulario.name,  "Ingrese su nombre! (solo letras)");
 });
 formulario.email.obj.addEventListener("input", (e) => {
-	set_ui(is_valid_email.test(e.target.value), formulario.email, msg = "Verifique este email!");
+	set_ui(is_valid_email.test(e.target.value), formulario.email, "Ingrese un mail valido!");
 });
 formulario.message.obj.addEventListener("input", (e) => {
-	set_ui(is_valid_message.test(e.target.value), formulario.message, msg = "Verifique este mensaje!");
+	set_ui(is_valid_message.test(e.target.value), formulario.message,  "Minimo 10 caracteres!");
 });
