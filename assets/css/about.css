@@ -1,8 +1,14 @@
+#about-section {
+	background: #01101c;
+	padding-bottom: 2rem;
+	margin-top: 2rem;
+}
 #about-section .container {
 	display: flex;
 	justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
+
 }
 
 #about-section h2 {
@@ -10,7 +16,9 @@
 }
 
 #about-section p{
-    max-width: 35%;
+    max-width: 50%;
+	font-size: 20px;
+
 }
 
 #about-section .img-container {
@@ -18,8 +26,17 @@
 	background-size: cover;
 	background-position: center center;
 	height: 300px;
-	width: 600px;
+	width: 500px;
 	border-radius: 10px;
-    margin-right: 1rem;
+    margin-right: 1.25rem;
     margin-bottom: 2rem;
+}
+@media screen and (max-width: 1250px) {
+	#about-section .img-container {
+		display:none;
+	}
+
+	#about-section p {
+		max-width: 80%;
+	}
 }
