@@ -72,3 +72,18 @@
 .modal::backdrop {
 	background: rgba(0, 0, 0, 0.7);
 }
+
+.modal iframe {
+	display: flex;
+	margin: 0 auto;
+	padding: 1rem;
+	max-width: 300px;
+}
+
+.modal img {
+	display: flex;
+	margin: 0 auto;
+	padding: 1rem;
+	max-width: 300px;
+	border-radius: 2rem;
+}

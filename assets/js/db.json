@@ -1,134 +1,148 @@
 {
     "satellites": [
+	
         {
             "title": "Victor-1",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "img_url": "assets/images/satellites/victor-1.jpg",
-            "long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+			"img_url": "assets/images/satellites/victor-1.jpg",
+			"long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+			"video_url": "https://www.youtube.com/embed/wwFQXDDZgf4",
+			"pills": ["INVAP - VENG", "VEX-1B", "2019", "$1.000.000", "3000 kg", "20m (5,5 ft) de altura", "4.5m (13 ft) de largo", "1.5m (4 ft) de ancho"]
+		},
+		{
+			"title": "SAC-B",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+			"img_url": "assets/images/satellites/sac-b.jpg",
+			"long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+			"video_url": "https://www.youtube.com/embed/heVfGT0f22k",
+
+			"pills": ["INVAP - VENG", "VEX-1B", "2019", "$1.000.000", "3000 kg", "20m (5,5 ft) de altura", "4.5m (13 ft) de largo", "1.5m (4 ft) de ancho"]
+		},
+		{
+			"title": "Victor-1",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+			"img_url": "assets/images/satellites/victor-1.jpg",
+			"long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+			"pills": ["INVAP - VENG", "VEX-1B", "2019", "$1.000.000", "3000 kg", "20m (5,5 ft) de altura", "4.5m (13 ft) de largo", "1.5m (4 ft) de ancho"]
+		},
+		{
+			"title": "SAC-B",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+			"img_url": "assets/images/satellites/sac-b.jpg",
+			"long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+			"pills": ["INVAP - VENG", "VEX-1B", "2019", "$1.000.000", "3000 kg", "20m (5,5 ft) de altura", "4.5m (13 ft) de largo", "1.5m (4 ft) de ancho"]
+		}
+	],
+	"launchers": [
+        {
+            "title": "VEx-1A",
+            "description": "Vehículo Experimental",
+            "img_url": "assets/images/launchers/vex-1a.jpg",
+            "long_description": "En marzo del 2014 se realizó desde el Centro Espacial Punta Indio la primera prueba de un vehículo Vex1 (denominado Vex1A), utilizando como combustible hidracina y tetróxido de nitrógeno/ácido nítrico como oxidante, a fin de verificar el sistema de navegación guiado y control en un lanzamiento vertical desde una plataforma de lanzamiento (pad), así como las interfaces con su segmento terreno. El Vex1A no pudo completar su misión por las interferencias halladas entre los desvíos dados por la condición inicial y la cinemática propia del vehículo con el pad. Sin embargo, la telemetría dada por el vehículo en este breve lapso permitió contar con información suficiente para el rediseño y modificaciones para una nueva prueba experimental (Vex1B)",
+			"image": "assets/images/launchers/vex-1a.jpg",
             "pills": [
-                "INVAP - VENG",
-                "VEX-1B",
-                "2019",
-                "$1.000.000",
-                "3000 kg",
-                "20m (5,5 ft) de altura",
-                "4.5m (13 ft) de largo",
-                "1.5m (4 ft) de ancho"
+                "VENG-CONAE",
+                "VEX-1A",
+                "Longitud: 14,5m",
+                "Diametro: 1,5m",
+                "Empuje: 4 toneladas"
             ]
         },
         {
-            "title": "SAC-B",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "img_url": "assets/images/satellites/sac-b.jpg",
-            "long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "pills": [
-                "INVAP - VENG",
-                "VEX-1B",
-                "2019",
-                "$1.000.000",
-                "3000 kg",
-                "20m (5,5 ft) de altura",
-                "4.5m (13 ft) de largo",
-                "1.5m (4 ft) de ancho"
-            ]
-        },
+			"title": "VEx-1B",
+			"description": "Vehículo Experimental",
+			"img_url": "assets/images/launchers/vex-1b.png",
+			"long_description": "El vehículo VEX 1B, es el segundo de una serie de cohétes experimentales a lanzar como prototipos para perfeccionar el lanzador satelital Tronador II, y tiene una altura de 14,5 metros, equivalente a un edificio de 5 pisos, pesa 2,8 toneladas y alcanza una velocidad máxima de 828 kilómetros.En Agosto de 2014 se hizo el ensayo de vuelo. El VEx1B cumplió la trayectoria programada volando durante 27 segundos y llegando a una altura máxima de 2.200 m, permitiendo comprobar en vuelo el sistema de navegación, guiado y control, sistema de propulsión, entre otros sistemas del vehículo.",
+			"pills": [
+				"VENG-CONAE",
+				"VEx-1B",
+				"Longitud: 14,5 m ",
+				"Diámetro: 1,5 m",
+				"Empuje: 4 toneladas"
+			]
+		},
         {
-            "title": "Victor-1",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "img_url": "assets/images/satellites/victor-1.jpg",
-            "long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "pills": [
-                "INVAP - VENG",
-                "VEX-1B",
-                "2019",
-                "$1.000.000",
-                "3000 kg",
-                "20m (5,5 ft) de altura",
-                "4.5m (13 ft) de largo",
-                "1.5m (4 ft) de ancho"
-            ]
-        },
+			"title": "VEx-5A",
+			"description": "Vehículo Experimental",
+			"img_url": "assets/images/launchers/vex-5a.png",
+			"long_description": "La primera etapa T-10 es capaz de producir 11 t de empuje, mientras que la segunda etapa T-4 es capaz de 4 t de empuje. El cohete tenía 18 metros de largo y 1,5 metros de diámetro, con un peso total de lanzamiento (combustible incluido) de 8500 kg. El 20 de abril de 2017 se llevó a cabo el lanzamiento, el primer prototipo del programa con dos etapas. Una fuga de kerosene en el motor produjo un incendio que provocó una interrupción en el suministro de propelentes al motor. El motor se apagó seis segundos después del despegue tras alcanzar 200 metros de altura, precipitándose a tierra.",
+			"pills": [
+				"VENG-CONAE",
+				"VEx-5A",
+				"Longitud: 17,5 m ",
+				"Diámetro: 1,5 m",
+				"Empuje: E1 11 toneladas",
+				"Empuje: E2 3 toneladas"
+			]
+		},
+		{
+			"title": "TRONADOR II",
+			"description": "Vehículo lanzador",
+			"img_url": "assets/images/launchers/tronador-ii.png",
+			"long_description": "Consiste en un lanzador de unos 28 metros de altura y unos 2.5 metros de ancho, con un peso en vacío de alrededor de 5.1 toneladas y lleno de 67 toneladas, con capacidad de poner 250 kilogramos de carga útil en una órbita polar a 600 kilómetros.La configuración para el vehículo estará compuesta de dos etapas, considerándose el empleo de monometil hidracina como combustible y tetróxido de nitrógeno/ácido nítrico como oxidante para la etapa superior, mientras que para la primera etapa (la de mayor empuje y gasto de combustible) los propelentes serán oxígeno líquido y querosene, calidad espacial.",
+			"pills": [
+				"CONAE- VENG",
+				"TRONADOR II",
+				"Longitud: 28 m ", 
+				"Diámetro: 2,5 m",
+				"Carga útil: 250 kg", 
+				"Alcance: 600 km",
+				"Empuje: 30 toneladas"
+			]
+		},
         {
-            "title": "SAC-B",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "img_url": "assets/images/satellites/sac-b.jpg",
-            "long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "pills": [
-                "INVAP - VENG",
-                "VEX-1B",
-                "2019",
-                "$1.000.000",
-                "3000 kg",
-                "20m (5,5 ft) de altura",
-                "4.5m (13 ft) de largo",
-                "1.5m (4 ft) de ancho"
-            ]
-        }
-    ],
-    "launchers": [
+			"title": "VLE",
+			"description": "Microlanzador orbital",
+			"img_url": "assets/images/launchers/vle.jpg",
+			"long_description": "El 15 de Julio de 2020 la Comisión Nacional de Actividades Espaciales (CONAE), en conjunto con su empresa controlada VENG S.A., presentó el Vehículo Lanzador Espacial (VLE), un nuevo vehículo orbital que representa un paso previo al desarrollo del lanzador Tronador-III. Es un microlanzador, probablemente de 2 etapas, que utilizará el mismo propelente que el Tronador-III, oxígeno líquido y kerosene. VENG está diseñando un nuevo motor de 2,5 toneladas de empuje. El VLE podrá satelizar hasta 80 kg en LEO de 300 km de altitud.",
+			"pills": [
+				"CONAE- VENG",
+				"VLE",
+				"Empuje: 2,5 toneladas"
+			]
+		},
+
         {
-            "title": "Tronador II",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "img_url": "assets/images/launchers/tronador-ii.jpg",
-            "long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "pills": [
-                "INVAP - VENG",
-                "VEX-1B",
-                "2019",
-                "$1.000.000",
-                "3000 kg",
-                "20m (5,5 ft) de altura",
-                "4.5m (13 ft) de largo",
-                "1.5m (4 ft) de ancho"
-            ]
-        },
+			"title": "TRONADOR III",
+			"description": "Vehículo lanzador",
+			"img_url": "assets/images/launchers/tronador-iii.png",
+			"long_description": "El Tronador-III, pensado como una evolución del Tronador-II, comprende un lanzador de 2 etapas, la primera compuesta por 4 motores de 30 toneladas de empuje cada uno, alimentados con oxígeno líquido kerosene, y una segunda etapa dotada con un motor hipergólico (MMH/NTO) de 3 toneladas de empuje. El cohete tendrá un peso al despegue de 90 toneladas, altura de 35 metros y capacidad de colocar hasta 1.000 kg de carga útil en órbita baja terrestre (LEO).",
+			"pills": [
+				"CONAE- VENG", 
+				"TRONADOR III",
+				"Longitud: 34 m ", 
+				"Diámetro: 2,5 m", 
+				"Carga útil: 1000 kg"
+			]
+		},
         {
-            "title": "VEX-1A",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "img_url": "assets/images/launchers/vex-1a.png",
-            "long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "pills": [
-                "INVAP - VENG",
-                "VEX-1B",
-                "2019",
-                "$1.000.000",
-                "3000 kg",
-                "20m (5,5 ft) de altura",
-                "4.5m (13 ft) de largo",
-                "1.5m (4 ft) de ancho"
-            ]
-        },
+			"title": "FAS-1500",
+			"description": "Vehículo suborbital",
+			"img_url": "assets/images/launchers/fas-1500.png",
+			"long_description": "Es un vehículo suborbital de alta performance de dos etapas con el objetivo de colocar cargas útiles de 200 kg a 350 km de altitud, mediante el uso de motores de la familia Gradicom. Este desarrollo le permite a la FAA el desarrollo de sistemas altamente complejos y materiales de calificación espacial, sistemas de vuelo diversos como sistemas de separación y recuperación de carga útil, sistema de tele-destrucción para lanzadores de satélites, sistemas de sensores a bordo para registro y medición de parámetros de vuelo y Sistemas de telemetría redundantes.",
+			"pills": [
+				"Fuerza Aérea Argentina",
+				"FAS-1500",
+				"Carga útil: 200 Kg ",
+				"Empuje: E1 18 toneladas",
+				"Empuje: E2 4,5 toneladas"
+			]
+		},
         {
-            "title": "VEX-1B",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "img_url": "assets/images/launchers/vex-1b.png",
-            "long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "pills": [
-                "INVAP - VENG",
-                "VEX-1B",
-                "2019",
-                "$1.000.000",
-                "3000 kg",
-                "20m (5,5 ft) de altura",
-                "4.5m (13 ft) de largo",
-                "1.5m (4 ft) de ancho"
-            ]
-        },
-        {
-            "title": "VEX-5A",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "img_url": "assets/images/launchers/vex-5a.jpg",
-            "long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "pills": [
-                "INVAP - VENG",
-                "VEX-1B",
-                "2019",
-                "$1.000.000",
-                "3000 kg",
-                "20m (5,5 ft) de altura",
-                "4.5m (13 ft) de largo",
-                "1.5m (4 ft) de ancho"
-            ]
-        }
-    ]
+			"title": "Aventura-I",
+			"description": "Microlanzador orbital",
+			"img_url": "assets/images/launchers/aventura-i.png",
+			"long_description": "Aventura I está diseñado específicamente para smallsats. La línea de producción permite realizar lanzamientos frecuentes, sincronizando el desarrollo de satélites y los ciclos de lanzamiento. El objetivo es permitir el acceso a todos los satélites pequeños, proporcionando un gran servicio a precios asequibles.",
+			"pills": [
+				"TLON",
+				"Aventura-I",
+				"Longitud: 10 m ",
+				"Diámetro: 0,352 m",
+                "Carga útil: 25 kg",
+                "Alcance: 500-800 km",
+                "Empuje: 1,6 toneladas"
+			]
+		}
+       
+	]
 }
