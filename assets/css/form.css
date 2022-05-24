@@ -6,10 +6,10 @@
 	--form-elements-border: none;
 	--form-elements-border-radius: 0.25rem;
 	/* Background */
-	--form-bg: #222;
-	--form-elements-bg: #444;
+	--form-bg: transparent;
+	--form-elements-bg: #253346;
 	--form-elements-border: none;
-	--form-elements-hover-bg: #666;
+	--form-elements-hover-bg: #304056;
 	--form-elements-hover-border: none;
 	/* Text */
 	--form-text-color: #eee;
