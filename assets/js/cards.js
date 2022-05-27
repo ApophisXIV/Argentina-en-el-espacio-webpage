@@ -9,19 +9,18 @@ close_btn.addEventListener("click", () => {
 const open_modal = (content) => {
 	const header = document.querySelector("#modal-header");
 
-	const image = (url) => {
-		if(url==undefined) return ""
-		return `href=${content.href}`
-	}
-
+	const image = (url, alt) => {
+		if (url == undefined) return "";
+		return `<img src="${url}" alt= "${alt}"/>`;
+	};
 	const iframe = (url) => {
-		if(url==undefined) return ""
-		return `<iframe src="${content.video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-	}
+		if (url == undefined) return "";
+		return `<iframe src="${content.video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+	};
 	header.innerHTML = `
 		<h2>${content.title}</h2>
 		<p>${content.description}</p>
-		<img src="${content.image}" alt= "${content.title}"/>
+		${image(content.image, content.title)}
 		${iframe(content.video)}
 	`;
 	const pills_container = document.querySelector("#modal-pills-container");
@@ -80,7 +79,6 @@ fetch("./assets/js/db.json")
 					image: card_data.image,
 					video: card_data.video_url,
 					pills: card_data.pills,
-
 				});
 			});
 		});
