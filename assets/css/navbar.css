@@ -4,7 +4,6 @@
 }
 
 /* ---- Navigation Bar ----*/
-
 nav {
 	background: #1b1b1b90; /*Fondo de la nav*/
 	position: fixed;
@@ -72,7 +71,6 @@ nav .menu-icon {
 nav input[type="checkbox"] {
 	display: none;
 }
-/* Dropdown Menu code start */
 .content .links ul {
 	position: absolute;
 	background: #1b1b1b90;
@@ -104,7 +102,6 @@ nav input[type="checkbox"] {
 .content .links ul li:hover ul {
 	top: 0;
 }
-/* Responsive code start */
 @media screen and (max-width: 1250px) {
 	nav {
 		max-width: 100%;
@@ -157,7 +154,6 @@ nav input[type="checkbox"] {
 	.content .links li a.desktop-link {
 		display: none;
 	}
-	/* dropdown responsive code start */
 	.content .links ul,
 	.content .links ul ul {
 		position: static;

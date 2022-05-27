@@ -1,27 +1,26 @@
-
 /* Adopted design criteria: Mobile first */
 .footer {
-    --muted-text-color: #6c757d;
+	--muted-text-color: #6c757d;
 }
 
 #copyright {
 	font-size: 0.875rem;
 	text-align: center;
 	color: var(--muted-text-color);
-    padding: 1rem;
-    background-color: #111;
+	padding: 1rem;
+	background-color: #111;
 }
 #copyright a {
-    color: var(--muted-text-color);
+	color: var(--muted-text-color);
 	text-decoration: none;
 }
 
 #social-media {
-    background: #050505;
+	background: #050505;
 	text-align: center;
 	color: var(--muted-text-color);
-    padding: 0.75rem;
-    margin: 0 auto;
+	padding: 0.75rem;
+	margin: 0 auto;
 }
 #social-media a {
 	color: #555;
@@ -30,18 +29,18 @@
 .social-media-wrapper {
 	display: flex;
 	justify-content: space-around;
-    max-width: 500px;
-    margin: 0 auto;
+	max-width: 500px;
+	margin: 0 auto;
 }
 .social-media-designer {
-    margin: 0 1rem;
+	margin: 0 1rem;
 }
-.social-media-designer p{
-    font-size: 0.875rem;
-    margin-bottom: 0.5rem;
+.social-media-designer p {
+	font-size: 0.875rem;
+	margin-bottom: 0.5rem;
 }
 .social-media-designer div {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
