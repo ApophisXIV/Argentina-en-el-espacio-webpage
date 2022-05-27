@@ -8,6 +8,12 @@ close_btn.addEventListener("click", () => {
 
 const open_modal = (content) => {
 	const header = document.querySelector("#modal-header");
+
+	const image = (url) => {
+		if(url==undefined) return ""
+		return `href=${content.href}`
+	}
+
 	const iframe = (url) => {
 		if(url==undefined) return ""
 		return `<iframe src="${content.video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`

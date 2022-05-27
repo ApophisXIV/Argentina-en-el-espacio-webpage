@@ -2,36 +2,71 @@
     "satellites": [
 	
         {
-            "title": "Victor-1",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-			"img_url": "assets/images/satellites/victor-1.jpg",
-			"long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-			"video_url": "https://www.youtube.com/embed/wwFQXDDZgf4",
-			"pills": ["INVAP - VENG", "VEX-1B", "2019", "$1.000.000", "3000 kg", "20m (5,5 ft) de altura", "4.5m (13 ft) de largo", "1.5m (4 ft) de ancho"]
+            "title": "SAC-A",
+			"description": "Validación tecnológica",
+			"img_url": "assets/images/satellites/sac-a.jpg",
+			"long_description": "El SAC-A posee un peso de 68 kg, y sirvió para probar sistemas ópticos, de energía, de navegación y de guiado de control. En diciembre de 1998, llegó a exceder su vida útil de 8 meses sin presentar problemas técnicos. El satélite se quemó al entrar en la atmósfera en octubre de 1999, habiendo transmitido de manera correcta datos e imágenes.",
+			"video_url": "https://www.youtube.com/embed/E1PeWcrSaQI",
+			"pills": ["CONAE", "SAC-A", "Peso: 68Kg", "Lanzamiento: 1998"]
 		},
 		{
 			"title": "SAC-B",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+			"description": "Astronómico",
 			"img_url": "assets/images/satellites/sac-b.jpg",
-			"long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-			"video_url": "https://www.youtube.com/embed/heVfGT0f22k",
+			"long_description": "Se lanzó en 1996 (antes que el SAC A) con el objetivo de investigar las fuentes explosivas extragalácticas de alta energía. Su peso era de 191 kg, (50 kg de carga útil). Debido a fallas en el vehículo disparador no pudo eyectarse del mismo y al quedar pegado se quedó sin energía por lo que solo pudo dar escasas vueltas a la tierra. Sin embargo pudo poner en funcionamiento todos sus sistemas correctamente hasta que las baterías de a bordo se agotaron. Esto último se debió a que al haber estado incorrectamente adosado al cohete Pegasus el satélite no pudo desplegar sus paneles solares.",
+			"image": "assets/images/satellites/sac-b-card.jpg",
 
-			"pills": ["INVAP - VENG", "VEX-1B", "2019", "$1.000.000", "3000 kg", "20m (5,5 ft) de altura", "4.5m (13 ft) de largo", "1.5m (4 ft) de ancho"]
+			"pills": ["CONAE - INVAP - NASA", "SAC-B", "Peso: 200Kg", "Lanzamiento: 1996"]
 		},
 		{
-			"title": "Victor-1",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-			"img_url": "assets/images/satellites/victor-1.jpg",
-			"long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-			"pills": ["INVAP - VENG", "VEX-1B", "2019", "$1.000.000", "3000 kg", "20m (5,5 ft) de altura", "4.5m (13 ft) de largo", "1.5m (4 ft) de ancho"]
+			"title": "SAC-C",
+			"description": "Observación ambiental",
+			"img_url": "assets/images/satellites/sac-c.png",
+			"long_description": "Lanzado en 2000, se mantuvo en buen funcionamiento durante casi trece años, a pesar de que se le estimaba un tiempo de vida de tan solo cinco años. Se trata de un satélite mediano de 485 kg de peso, de órbita baja, para la observación de la superficie terrestre por medio de 3 cámaras. Tiene como misión el monitoreo del ambiente y de catástrofes naturales.",
+			"video_url":"https://www.youtube.com/embed/nHz5aHfeMbw",
+			"pills": ["CONAE - INVAP - NASA", "SAC-C", "Peso: 500Kg", "Lanzamiento: 2000"]
 		},
 		{
-			"title": "SAC-B",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-			"img_url": "assets/images/satellites/sac-b.jpg",
-			"long_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-			"pills": ["INVAP - VENG", "VEX-1B", "2019", "$1.000.000", "3000 kg", "20m (5,5 ft) de altura", "4.5m (13 ft) de largo", "1.5m (4 ft) de ancho"]
+			"title": "SAC-D",
+			"description": "Observación ambiental",
+			"img_url": "assets/images/satellites/sac-d.jpg",
+			"long_description": "El SAC D, también conocido como Aquarius, tiene como objetivo estudiar la salinidad del mar y detectar zonas de riesgo de incendios e inundaciones. El SAC-D también estudiará la superficie terrestre para tomar datos sobre humedad del suelo y detectar focos de alta temperatura, entre otros, para su utilización en alerta temprana de incendios e inundaciones.",
+			"video_url":"https://www.youtube.com/embed/4cOt9fZSw6k",
+			"pills": ["CONAE - INVAP - NASA", "SAC-D" , "Peso: 1350Kg", "Lanzamiento: 2011"]
+		},
+		{
+			"title": "SAC-E",
+			"description": "Observación ambiental",
+			"img_url": "assets/images/satellites/sac-e.png",
+			"long_description": "La misión SABIA-Mar brindará información valiosa para los ámbitos científico, productivo y de toma de decisiones. Su objetivo es proveer información y productos para el estudio de la productividad primaria del mar, los ecosistemas marinos, el ciclo del carbono, la dinámica de las aguas costeras, el manejo de recursos pesqueros y la calidad del agua en costas y estuarios. El satélite está en construcción en el país. La puesta en órbita del SABIA-Mar 1 está prevista para el año 2024.",
+			"video_url": "https://www.youtube.com/embed/U-fu0EnZRxQ",
+			"pills": ["CONAE - AEB/INPE", "SAC-E", "En desarrollo"]
+		},
+		{
+			"title": "ARSAT-1/2",
+			"description": "Telecomunicaciones",
+			"img_url": "assets/images/satellites/arsat-1.jpg",
+			"long_description": "Ambos comparten la misma plataforma, peso y potencia de transmisión. Sólo difieren significativamente por su “carga útil”: el tipo de antenas, bandas del espectro de microondas en las que emiten y las zonas que iluminan:ARSAT-1: Ilumina el Cono Sur en banda Ku, con una única antena y una potencia de 3,4 kilovatios. ARSAT 2: Ilumina las Tres Américas en bandas C y Ku, usa tres antenas que emiten con una potencia de 3,5 kilovatios. El ARSAT 1 y 2 tienen como objetivo un uso social, industrial y de mercado: proporcionará mejores condiciones de conexión a una amplia gama de servicios —entre ellos la telefonía móvil, la televisión digital, la conexión a Internet y cualquier otra conexión IP— en todo el territorio nacional.",
+			"video_url": "https://www.youtube.com/embed/Gs5hs7hn4As",
+			"pills": ["INVAP", "ARSAT-1", "ARSAT-2", "Peso: 3000Kg", "Lanzamiento 1: 2014", "Lanzamieto 2: 2015"]
+		},
+		{
+			"title": "ARSAT-SG1",
+			"description": "Telecomunicaciones",
+			"img_url": "assets/images/satellites/arsat-sg1.jpg",
+			"long_description": "ARSAT-SG1, anteriormente conocido como ARSAT-3,ofrecerá una amplia gama de servicios de telecomunicaciones, tales como la transmisión de datos, Internet y televisión, ya que se ha desarrollado de nueva plataforma para poder ofrecer más servicios y ganar en competitividad en la relación entre potencia y peso que tienen los satélites. Tendrá Banda Ka bentpipe multi-ha. Al estar diseñado para dar Internet en dicha banda, permitirá dar un servicio a un costo similar a CL, para complementar la red de fibra óptica en Argentina y cubrir los baches. El ARSAT-3 se pensó inicialmente para la misma plataforma que el ARSAT 1 y 2, pero hoy la idea está en revisión: probablemente tenga innovaciones en propulsión que lo hagan un satélite conceptualmente nuevo.",
+			"image": "assets/images/satellites/arsat-sg1-card.jpg",
+			"pills": ["INVAP", "ARSAT-SG1", "En desarrollo"]
+		},
+		{
+			"title": "SAOCOM 1A/B",
+			"description": "Observación ambiental",
+			"img_url": "assets/images/satellites/saocom.png",
+			"long_description": "SAOCOM (Satélite Argentino de Observación Con Microondas) es un sistema de dos satélites de observación terrestre de la agencia espacial de Argentina, CONAE. Están equipados con un radar de apertura sintética interferométrico. La misión consiste en la puesta en órbita de dos satélites, SAOCOM 1A y SAOCOM 1B, básicamente similares que conformarán una constelación, por la necesidad de obtener revisitas adecuadas de distintos sectores de la tierra. El lanzamiento del SAOCOM 1A fue realizado el 7 de octubre de 2018, mientras que el SAOCOM 1B fue lanzado el 30 de agosto de 2020, desde Cabo Cañaveral. Dos de estos satélites en conjunto con cuatro satélites COSMO-SkyMed equipados con SAR de banda X de la Agencia espacial italiana, ASI, conformarán la constelación Sistema Ítalo Argentino para la Gestión de Emergencias (SIASGE).",
+			"video_url":"https://www.youtube.com/embed/lFscWtuYMjs",
+			"pills": ["CONAE - INVAP - VENG", "SAOCOM 1A", "SAOCOM 1B", "Peso: 3000Kg", "Lanzamiento 1: 2018", "Lanzamiento 2: 2020"]
 		}
+
 	],
 	"launchers": [
         {
@@ -39,7 +74,7 @@
             "description": "Vehículo Experimental",
             "img_url": "assets/images/launchers/vex-1a.jpg",
             "long_description": "En marzo del 2014 se realizó desde el Centro Espacial Punta Indio la primera prueba de un vehículo Vex1 (denominado Vex1A), utilizando como combustible hidracina y tetróxido de nitrógeno/ácido nítrico como oxidante, a fin de verificar el sistema de navegación guiado y control en un lanzamiento vertical desde una plataforma de lanzamiento (pad), así como las interfaces con su segmento terreno. El Vex1A no pudo completar su misión por las interferencias halladas entre los desvíos dados por la condición inicial y la cinemática propia del vehículo con el pad. Sin embargo, la telemetría dada por el vehículo en este breve lapso permitió contar con información suficiente para el rediseño y modificaciones para una nueva prueba experimental (Vex1B)",
-			"image": "assets/images/launchers/vex-1a.jpg",
+			"image": "assets/images/launchers/vex-1-card.jpg",
             "pills": [
                 "VENG-CONAE",
                 "VEX-1A",
@@ -53,6 +88,7 @@
 			"description": "Vehículo Experimental",
 			"img_url": "assets/images/launchers/vex-1b.png",
 			"long_description": "El vehículo VEX 1B, es el segundo de una serie de cohétes experimentales a lanzar como prototipos para perfeccionar el lanzador satelital Tronador II, y tiene una altura de 14,5 metros, equivalente a un edificio de 5 pisos, pesa 2,8 toneladas y alcanza una velocidad máxima de 828 kilómetros.En Agosto de 2014 se hizo el ensayo de vuelo. El VEx1B cumplió la trayectoria programada volando durante 27 segundos y llegando a una altura máxima de 2.200 m, permitiendo comprobar en vuelo el sistema de navegación, guiado y control, sistema de propulsión, entre otros sistemas del vehículo.",
+			"video_url": "https://www.youtube.com/embed/mn8pYEh6PWM",
 			"pills": [
 				"VENG-CONAE",
 				"VEx-1B",
@@ -66,6 +102,7 @@
 			"description": "Vehículo Experimental",
 			"img_url": "assets/images/launchers/vex-5a.png",
 			"long_description": "La primera etapa T-10 es capaz de producir 11 t de empuje, mientras que la segunda etapa T-4 es capaz de 4 t de empuje. El cohete tenía 18 metros de largo y 1,5 metros de diámetro, con un peso total de lanzamiento (combustible incluido) de 8500 kg. El 20 de abril de 2017 se llevó a cabo el lanzamiento, el primer prototipo del programa con dos etapas. Una fuga de kerosene en el motor produjo un incendio que provocó una interrupción en el suministro de propelentes al motor. El motor se apagó seis segundos después del despegue tras alcanzar 200 metros de altura, precipitándose a tierra.",
+			"video_url": "https://www.youtube.com/embed/lm77Ox1HuPY",
 			"pills": [
 				"VENG-CONAE",
 				"VEx-5A",
@@ -80,6 +117,7 @@
 			"description": "Vehículo lanzador",
 			"img_url": "assets/images/launchers/tronador-ii.png",
 			"long_description": "Consiste en un lanzador de unos 28 metros de altura y unos 2.5 metros de ancho, con un peso en vacío de alrededor de 5.1 toneladas y lleno de 67 toneladas, con capacidad de poner 250 kilogramos de carga útil en una órbita polar a 600 kilómetros.La configuración para el vehículo estará compuesta de dos etapas, considerándose el empleo de monometil hidracina como combustible y tetróxido de nitrógeno/ácido nítrico como oxidante para la etapa superior, mientras que para la primera etapa (la de mayor empuje y gasto de combustible) los propelentes serán oxígeno líquido y querosene, calidad espacial.",
+			"image": "assets/images/launchers/tronador-ii-card.jpg",
 			"pills": [
 				"CONAE- VENG",
 				"TRONADOR II",
@@ -95,6 +133,7 @@
 			"description": "Microlanzador orbital",
 			"img_url": "assets/images/launchers/vle.jpg",
 			"long_description": "El 15 de Julio de 2020 la Comisión Nacional de Actividades Espaciales (CONAE), en conjunto con su empresa controlada VENG S.A., presentó el Vehículo Lanzador Espacial (VLE), un nuevo vehículo orbital que representa un paso previo al desarrollo del lanzador Tronador-III. Es un microlanzador, probablemente de 2 etapas, que utilizará el mismo propelente que el Tronador-III, oxígeno líquido y kerosene. VENG está diseñando un nuevo motor de 2,5 toneladas de empuje. El VLE podrá satelizar hasta 80 kg en LEO de 300 km de altitud.",
+			"image": "assets/images/launchers/vle-card.webp",
 			"pills": [
 				"CONAE- VENG",
 				"VLE",
@@ -107,6 +146,7 @@
 			"description": "Vehículo lanzador",
 			"img_url": "assets/images/launchers/tronador-iii.png",
 			"long_description": "El Tronador-III, pensado como una evolución del Tronador-II, comprende un lanzador de 2 etapas, la primera compuesta por 4 motores de 30 toneladas de empuje cada uno, alimentados con oxígeno líquido kerosene, y una segunda etapa dotada con un motor hipergólico (MMH/NTO) de 3 toneladas de empuje. El cohete tendrá un peso al despegue de 90 toneladas, altura de 35 metros y capacidad de colocar hasta 1.000 kg de carga útil en órbita baja terrestre (LEO).",
+			"image": "assets/images/launchers/tronador-iii-card.png",
 			"pills": [
 				"CONAE- VENG", 
 				"TRONADOR III",
@@ -120,6 +160,7 @@
 			"description": "Vehículo suborbital",
 			"img_url": "assets/images/launchers/fas-1500.png",
 			"long_description": "Es un vehículo suborbital de alta performance de dos etapas con el objetivo de colocar cargas útiles de 200 kg a 350 km de altitud, mediante el uso de motores de la familia Gradicom. Este desarrollo le permite a la FAA el desarrollo de sistemas altamente complejos y materiales de calificación espacial, sistemas de vuelo diversos como sistemas de separación y recuperación de carga útil, sistema de tele-destrucción para lanzadores de satélites, sistemas de sensores a bordo para registro y medición de parámetros de vuelo y Sistemas de telemetría redundantes.",
+			"image": "assets/images/launchers/fas-1500-card.jpg",
 			"pills": [
 				"Fuerza Aérea Argentina",
 				"FAS-1500",
@@ -133,6 +174,7 @@
 			"description": "Microlanzador orbital",
 			"img_url": "assets/images/launchers/aventura-i.png",
 			"long_description": "Aventura I está diseñado específicamente para smallsats. La línea de producción permite realizar lanzamientos frecuentes, sincronizando el desarrollo de satélites y los ciclos de lanzamiento. El objetivo es permitir el acceso a todos los satélites pequeños, proporcionando un gran servicio a precios asequibles.",
+			"video_url": "https://www.youtube.com/embed/tVOMArssrxQ",
 			"pills": [
 				"TLON",
 				"Aventura-I",
@@ -143,6 +185,5 @@
                 "Empuje: 1,6 toneladas"
 			]
 		}
-       
 	]
 }
