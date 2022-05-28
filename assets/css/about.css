@@ -1,6 +1,7 @@
 #about-section {
 	background: #01101c;
-	height: 90vh;
+	min-height: 80vh;
+    padding: 2rem;
 }
 #about-section .about-container {
 	display: flex;
